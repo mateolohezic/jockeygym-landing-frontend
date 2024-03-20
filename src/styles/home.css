@@ -1,0 +1,14 @@
+.gradient__portada{
+    mix-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 70%, rgba(0,0,0, 1) 95%);
+}
+
+.gradient__sedes{
+    background: url('../assets/sucursal.webp'), linear-gradient(to top, rgba(0, 0, 0, 0.2) 70%, rgba(0,0,0, 1) 95%);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: 50% 50%;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+}
