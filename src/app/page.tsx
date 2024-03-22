@@ -6,7 +6,7 @@ import app from "../assets/app.png";
 import download_apple from "../assets/download_apple.png";
 import download_playstore from "../assets/download_playstore.png";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
@@ -15,17 +15,17 @@ export default function Home() {
           <source src="/assets/portada_home.mp4" type="video/mp4" />
           Tu navegador no soporta videos.
         </video>
-        <div className="w-full xl:w-[1200px] px-4 xl:px-0 flex flex-col items-center justify-center relative">
+        <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative">
           <h1 className="text-4xl text-white font-extrabold -top-24 absolute">JOCKEY GYM</h1>
           <span className="text-8xl text-white font-extrabold">NUNCA TE CONFORMES.</span>
           <h2 className="text-white text-4xl font-gotham">Descubrí el mejor gimnasio de Tucumán.</h2>
           <Link href="/" className="mt-8 flex justify-center items-center text-white text-2xl border-2 px-8 py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
         </div>
-        <span className="absolute bottom-8 text-white text-3xl font-gotham-black">#NoParesDeEntrenar #SiempreUnoCercaTuyo</span>
+        <span className="absolute bottom-8 text-white text-sm font-gotham-black">No pares de entrenar.</span>
       </section>
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
         <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__sedes bg-blend-multiply"></div>
-        <div className="w-full xl:w-[1200px] px-4 xl:px-0">
+        <div className="w-full xl:max-w-7xl	 px-4 xl:px-0">
           <h3 className="text-jockey text-3xl font-gotham-black">LA CADENA DE GIMNASIOS MAS GRANDES DE TUCUMÁN</h3>
           <span className="text-8xl text-white font-extrabold block">UNA SEDE JOCKEY CERCA TUYO</span>
           <span className="text-white text-2xl font-gotham block mt-8">Conocé nuestras sedes</span>
