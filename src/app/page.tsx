@@ -30,27 +30,27 @@ export default function HomePage() {
           <span className="text-8xl text-white font-extrabold block">UNA SEDE JOCKEY CERCA TUYO</span>
           <span className="text-white text-2xl font-gotham block mt-8">Conocé nuestras sedes</span>
           <div className="w-full flex gap-4 items-stretch justify-center mt-4">
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-3 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-3 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">CENTRO</span>
             </Link>
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">PERÓN</span>
             </Link>
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">EL SOLAR</span>
             </Link>
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">CATALINAS</span>
             </Link>
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">LULES</span>
             </Link>
-            <Link href="/sedes" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="border-2 border-white text-2xl w-32 px-2 py-2 rounded-lg flex flex-col justify-center items-center hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">DISTRITO</span>
             </Link>

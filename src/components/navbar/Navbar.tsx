@@ -16,7 +16,7 @@ export const Navbar = () => {
         },
         {
             title: 'Sedes',
-            href: '/sedes'
+            href: '/sedes/centro'
         },
         {
             title: 'Personal Training',

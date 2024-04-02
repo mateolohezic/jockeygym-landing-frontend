@@ -23,12 +23,12 @@ export default function PreciosPage() {
         },
         {
           name: 'Semestre Premium',
-          value: '174.900'
+          value: '174.900',
+          important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900',
-          important: true
+          value: '294.900'
         },
       ],
       href:'/'
@@ -50,12 +50,12 @@ export default function PreciosPage() {
         },
         {
           name: 'Semestre Premium',
-          value: '174.900'
+          value: '174.900',
+          important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900',
-          important: true
+          value: '294.900'
         },
       ],
       href:'/'
@@ -77,12 +77,12 @@ export default function PreciosPage() {
         },
         {
           name: 'Semestre Premium',
-          value: '174.900'
+          value: '174.900',
+          important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900',
-          important: true
+          value: '294.900'
         },
       ],
       href:'/'
@@ -108,12 +108,12 @@ export default function PreciosPage() {
         },
         {
           name: 'Semestre Premium',
-          value: '174.900'
+          value: '174.900',
+          important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900',
-          important: true
+          value: '294.900'
         },
       ],
       href:'/'
@@ -139,12 +139,12 @@ export default function PreciosPage() {
         },
         {
           name: 'Semestre Premium',
-          value: '174.900'
+          value: '174.900',
+          important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900',
-          important: true
+          value: '294.900'
         },
       ],
       href:'/'
