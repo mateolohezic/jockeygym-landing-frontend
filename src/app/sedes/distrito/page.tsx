@@ -11,9 +11,9 @@ export default function CentroPage() {
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative">
         <div className="absolute top-0 left-0 w-full h-full -z-10 portada"></div>
         <Image src={precios} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
-        <div className="w-full xl:max-w-7xl	 px-4 xl:px-0 flex flex-col items-center justify-center relative text-center" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
+        <div className="w-full xl:max-w-7xl	 px-4 xl:px-0 flex flex-col items-center justify-center relative text-center">
           <h1 className="text-3xl text-jockey font-extrabold">JOCKEY GYM</h1>
-          <h2 className="text-8xl font-extrabold text-white">SEDE CENTRO</h2>
+          <h2 className="text-8xl font-extrabold text-white">SEDE DISTRITO</h2>
           <div className="bg-jockey  py-4 px-8 rounded-lg flex justify-center items-center leading-none">
             <h3 className="text-5xl font-extrabold text-white relative top-1">SAN MARTÍN 451</h3>
           </div>
@@ -24,7 +24,7 @@ export default function CentroPage() {
         <div className="grow relative">
           <iframe className="absolute size-full top-0 left-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.080230737736!2d-65.20367552372697!3d-26.829743165520135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c106265bd19%3A0xa15f4e59efe0ce83!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20451%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1711376523609!5m2!1ses!2sar" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div className="w-full max-w-3xl bg-white flex flex-col justify-start items-start py-24 px-6 relative" data-aos="fade-right" data-aos-delay='150' data-aos-duration="300" data-aos-easing="ease-in-out">
+        <div className="w-full max-w-3xl bg-white flex flex-col justify-start items-start py-24 px-6 relative">
           <h3 className="text-7xl text-start flex flex-col">
             <span className="text-jockey">UN GIMNASIO CERCA,</span>
             <span className="text-jockey">NO IMPORTA DONDE ESTES.</span>
@@ -38,7 +38,7 @@ export default function CentroPage() {
         <div className="grow w-full flex flex-col justify-end items-center">
           <span className="flex flex-col justify-center items-center text-center">
             <span className="font-gotham text-white text-4xl">SEDE</span>
-            <b className="font-gotham-black text-white text-6xl">CENTRO</b>
+            <b className="font-gotham-black text-white text-6xl">DISTRITO</b>
           </span>
           <span className="mt-2 font-gotham text-white text-3xl ">SAN MARTIN 451</span>
           <div className="mt-6 flex justify-between items-start text-2xl divide-x-2 divide-white divide-opacity-25">
