@@ -165,7 +165,7 @@ export default function PreciosPage() {
       <section className="w-full min-h-svh flex flex-col justify-start items-center relative py-24">
         <h3 className="font-gotham-black text-4xl text-center">ELEGÍ TU PLAN IDEAL Y EMPEZÁ A ENTRENAR HOY.</h3>
         <p className="font-gotham-black text-xl text-center text-jockey">Consultá nuestros planes de financiación y descuento por pago en efectivo.</p>
-        <div className="w-full xl:max-w-7xl mt-12 flex flex-wrap-reverse justify-center items-center gap-8">
+        <div className="w-full xl:max-w-7xl mt-12 flex flex-wrap-reverse justify-center items-center gap-8" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
           {
             sedesPrecios.map( ({ title, properties, href }) => (
               <article className="font-gotham flex flex-col items-center justify-center w-96 bg-white drop-shadow-lg rounded-lg" key={title}>

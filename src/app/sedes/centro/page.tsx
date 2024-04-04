@@ -35,7 +35,7 @@ export default function CentroPage() {
         </div>
       </section>
       <section className="w-full min-h-screen bg-jockey flex flex-col justify-between items-center">
-        <div className="grow w-full flex flex-col justify-end items-center">
+        <div className="grow w-full flex flex-col justify-end items-center" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
           <span className="flex flex-col justify-center items-center text-center">
             <span className="font-gotham text-white text-4xl">SEDE</span>
             <b className="font-gotham-black text-white text-6xl">CENTRO</b>
