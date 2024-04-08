@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import precios from '../../assets/precios.webp'
 import '../../styles/precios.css'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Precios - JOCKEY GYM',
+  description: 'Precios - JOCKEY GYM',
+};
 
 export default function PreciosPage() {
 

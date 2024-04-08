@@ -11,6 +11,12 @@ import sede_distrito_4 from '../../../assets/sedes/distrito/sede_distrito_4.webp
 import sede_distrito_5 from '../../../assets/sedes/distrito/sede_distrito_5.webp'
 import sede_distrito_6 from '../../../assets/sedes/distrito/sede_distrito_6.webp'
 import sede_distrito_7 from '../../../assets/sedes/distrito/sede_distrito_7.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sede Distrito - JOCKEY GYM',
+  description: 'Sede Distrito - JOCKEY GYM',
+};
 
 export default function DistritoPage() {
 

@@ -10,6 +10,12 @@ import sede_solar_3 from '../../../assets/sedes/solar/sede_solar_3.webp'
 import sede_solar_4 from '../../../assets/sedes/solar/sede_solar_4.webp'
 import sede_solar_5 from '../../../assets/sedes/solar/sede_solar_5.webp'
 import sede_solar_6 from '../../../assets/sedes/solar/sede_solar_6.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sede El Solar - JOCKEY GYM',
+  description: 'Sede El Solar - JOCKEY GYM',
+};
 
 export default function SolarPage() {
 

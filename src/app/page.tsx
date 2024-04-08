@@ -5,6 +5,12 @@ import Image from "next/image";
 import app from "../assets/home/app.png";
 import download_apple from "../assets/home/download_apple.png";
 import download_playstore from "../assets/home/download_playstore.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'JOCKEY GYM',
+  description: 'JOCKEY GYM',
+};
 
 export default function HomePage() {
   return (

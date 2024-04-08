@@ -12,6 +12,12 @@ import sede_peron_5 from '../../../assets/sedes/peron/sede_peron_5.webp'
 import sede_peron_6 from '../../../assets/sedes/peron/sede_peron_6.webp'
 import sede_peron_7 from '../../../assets/sedes/peron/sede_peron_7.webp'
 import sede_peron_8 from '../../../assets/sedes/peron/sede_peron_8.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sede Perón - JOCKEY GYM',
+  description: 'Sede Perón - JOCKEY GYM',
+};
 
 export default function PeronPage() {
 

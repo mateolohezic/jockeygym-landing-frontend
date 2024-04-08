@@ -10,6 +10,12 @@ import sede_catalinas_3 from '../../../assets/sedes/catalinas/sede_catalinas_3.w
 import sede_catalinas_4 from '../../../assets/sedes/catalinas/sede_catalinas_4.webp'
 import sede_catalinas_5 from '../../../assets/sedes/catalinas/sede_catalinas_5.webp'
 import sede_catalinas_6 from '../../../assets/sedes/catalinas/sede_catalinas_6.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sede Catalinas - JOCKEY GYM',
+  description: 'Sede Catalinas - JOCKEY GYM',
+};
 
 export default function CatalinasPage() {
 

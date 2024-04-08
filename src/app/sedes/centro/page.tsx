@@ -11,6 +11,12 @@ import sede_centro_5 from '../../../assets/sedes/centro/sede_centro_5.webp'
 import sede_centro_6 from '../../../assets/sedes/centro/sede_centro_6.webp'
 import sede_centro_7 from '../../../assets/sedes/centro/sede_centro_7.webp'
 import sede_centro_8 from '../../../assets/sedes/centro/sede_centro_8.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sede Centro - JOCKEY GYM',
+  description: 'Sede Centro - JOCKEY GYM',
+};
 
 export default function CentroPage() {
 
