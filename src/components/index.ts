@@ -4,6 +4,8 @@ export { Footer } from './footer/Footer';
 
 export { Logo } from './ui/Logo';
 
+export { Circle } from './ui/Circle';
+
 export { SwiperSede } from './ui/SwiperSede';
 
 export { AOSProvider } from './ui/AOSProvider';

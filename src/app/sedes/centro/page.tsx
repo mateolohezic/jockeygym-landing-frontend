@@ -1,16 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import precios from '../../../assets/precios.webp'
-import '../../../styles/sedes.css'
 import { SwiperSede } from "@/components";
+import '../../../styles/sedes.css'
+import sede_centro_1 from '../../../assets/sedes/centro/sede_centro_1.webp'
+import sede_centro_2 from '../../../assets/sedes/centro/sede_centro_2.webp'
+import sede_centro_3 from '../../../assets/sedes/centro/sede_centro_3.webp'
+import sede_centro_4 from '../../../assets/sedes/centro/sede_centro_4.webp'
+import sede_centro_5 from '../../../assets/sedes/centro/sede_centro_5.webp'
+import sede_centro_6 from '../../../assets/sedes/centro/sede_centro_6.webp'
+import sede_centro_7 from '../../../assets/sedes/centro/sede_centro_7.webp'
+import sede_centro_8 from '../../../assets/sedes/centro/sede_centro_8.webp'
 
 export default function CentroPage() {
+
+  const images = [ sede_centro_1, sede_centro_2, sede_centro_3, sede_centro_4, sede_centro_5, sede_centro_6, sede_centro_7, sede_centro_8 ]
 
   return (
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative">
         <div className="absolute top-0 left-0 w-full h-full -z-10 portada"></div>
-        <Image src={precios} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
+        <Image src={sede_centro_1} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
         <div className="w-full xl:max-w-7xl	 px-4 xl:px-0 flex flex-col items-center justify-center relative text-center" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-3xl text-jockey font-extrabold">JOCKEY GYM</h1>
           <h2 className="text-8xl font-extrabold text-white">SEDE CENTRO</h2>
@@ -50,7 +60,7 @@ export default function CentroPage() {
             </div>
             <div className="w-1/2 flex justify-start items-start px-6">
               <div className="flex flex-col items-start justify-center text-start">
-                <span className="text-white font-gotham">SABADO</span>
+                <span className="text-white font-gotham">SÁBADO</span>
                 <span className="text-white font-gotham">09:00 a 13:30</span>
                 <span className="text-white font-gotham">16:00 a 21:00</span>
               </div>
@@ -59,15 +69,9 @@ export default function CentroPage() {
           <h3 className="mt-16 font-gotham-black text-white text-4xl mb-8">¡Conocé tu proximo hogar!</h3>
         </div>
         <div className="w-full flex flex-col justify-center items-center">
-          <SwiperSede/>
+          <SwiperSede images={images} sede='Centro'/>
         </div>
       </section>
-
-
-
-
-
-
       <section className="w-full min-h-svh flex flex-col justify-start items-center relative py-16">
         <h3 className="font-gotham-black text-jockey text-4xl">¡Un horario hecho para vos!</h3>
         <table className="w-full max-w-7xl table table-fixed mt-16">
@@ -79,7 +83,7 @@ export default function CentroPage() {
               <th className="text-center text-jockey text-sm pb-2">Miercoles</th>
               <th className="text-center text-jockey text-sm pb-2">Jueves</th>
               <th className="text-center text-jockey text-sm pb-2">Viernes</th>
-              <th className="text-center text-jockey text-sm pb-2">Sabado</th>
+              <th className="text-center text-jockey text-sm pb-2">Sábado</th>
             </tr>
           </thead>
           <tbody className="divide-y-[1px] divide-jockey">

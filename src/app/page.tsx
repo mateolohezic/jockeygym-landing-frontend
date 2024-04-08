@@ -2,9 +2,9 @@ import Link from "next/link";
 import '../styles/home.css'
 import { Logo } from "@/components";
 import Image from "next/image";
-import app from "../assets/app.png";
-import download_apple from "../assets/download_apple.png";
-import download_playstore from "../assets/download_playstore.png";
+import app from "../assets/home/app.png";
+import download_apple from "../assets/home/download_apple.png";
+import download_playstore from "../assets/home/download_playstore.png";
 
 export default function HomePage() {
   return (
@@ -16,18 +16,18 @@ export default function HomePage() {
           Tu navegador no soporta videos.
         </video>
         <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
-          <h1 className="text-2xl lg:text-4xl text-white font-extrabold -top-24 absolute">JOCKEY GYM</h1>
-          <span className="text-7xl lg:text-8xl text-white font-extrabold">NUNCA TE CONFORMES.</span>
+          <h1 className="text-2xl lg:text-4xl text-white lg:font-extrabold -top-24 absolute">JOCKEY GYM</h1>
+          <span className="text-7xl lg:text-8xl text-white lg:font-extrabold">NUNCA TE CONFORMES.</span>
           <h2 className="text-white text-base lg:text-4xl font-gotham">Descubrí el mejor gimnasio de Tucumán.</h2>
           <Link href="/" className="mt-8 flex justify-center items-center text-white text-xl lg:text-2xl border-2 px-4 lg:px-8 py-2 lg:py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
         </div>
         <span className="absolute bottom-8 text-white text-sm font-gotham-black">No pares de entrenar.</span>
       </section>
-      <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
+      <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center pt-8 pb-24">
         <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__sedes bg-blend-multiply"></div>
         <div className="w-full xl:max-w-7xl	px-4 xl:px-0">
           <h3 className="text-jockey text-xs lg:text-3xl font-gotham-black">LA CADENA DE GIMNASIOS MAS GRANDES DE TUCUMÁN</h3>
-          <span className="mt-1 lg:mt-2 text-6xl lg:text-8xl text-white font-extrabold block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>
+          <span className="mt-1 lg:mt-2 text-4xl lg:text-8xl text-white font-gotham-black block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>
           <span className="text-white text-base lg:text-2xl font-gotham block mt-4 lg:mt-8">Conocé nuestras sedes</span>
           <div className="w-full grid grid-cols-1 justify-items-center md:grid-cols-2 lg:flex gap-4 lg:items-stretch lg:justify-center mt-4">
             <Link href="/sedes/centro" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
@@ -45,10 +45,6 @@ export default function HomePage() {
             <Link href="/sedes/catalinas" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">CATALINAS</span>
-            </Link>
-            <Link href="/sedes/lules" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
-              <span className="block leading-none text-white sr-only">SEDE</span>
-              <span className="block leading-none text-white">LULES</span>
             </Link>
             <Link href="/sedes/distrito" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>

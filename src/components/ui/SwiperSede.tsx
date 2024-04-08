@@ -3,10 +3,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../styles/swiperSede.css'
-import Image from 'next/image';
-import foto from '../../assets/sucursal.webp'
+import Image, { type StaticImageData } from 'next/image';
+import foto from '../../assets/home/sucursal.webp'
 
-export const SwiperSede = () => {
+interface Props{
+  images: Array<StaticImageData>
+  sede: string
+}
+
+export const SwiperSede = ({images, sede}:Props) => {
 
   const breakpoints = {
     // when window width is >= 320px
@@ -37,11 +42,13 @@ export const SwiperSede = () => {
       className="w-full"
       height={480}
     >
-      <SwiperSlide><Image src={foto} alt='Foto' className='aspect-square object-cover'/></SwiperSlide>
-      <SwiperSlide><Image src={foto} alt='Foto' className='aspect-square object-cover'/></SwiperSlide>
-      <SwiperSlide><Image src={foto} alt='Foto' className='aspect-square object-cover'/></SwiperSlide>
-      <SwiperSlide><Image src={foto} alt='Foto' className='aspect-square object-cover'/></SwiperSlide>
-      <SwiperSlide><Image src={foto} alt='Foto' className='aspect-square object-cover'/></SwiperSlide>
+      {
+        images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <Image src={image} priority={false} alt={`JOCKEY GYM Sede ${sede}`} className='aspect-square object-cover'/>
+          </SwiperSlide>
+        ))
+      }
     </Swiper>
   )
 }
