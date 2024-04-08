@@ -8,10 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        'jockey':{
+          DEFAULT: '#29A7DE',
+          'light': '#4DB9E8',
+          'dark': '#072B55',
+          'transparent': '#C0E3FF'
+        },
+      },
+      fontFamily: {
+        'gotham': ['Gotham', 'sans-serif'],
+        'gotham-black': ['Gotham Black', 'sans-serif'],
       },
     },
   },
