@@ -2,6 +2,14 @@ import Image from 'next/image'
 import logo from '../../assets/logo_jockey_gym.png'
 import Link from 'next/link'
 import { Logo } from '../ui/Logo'
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export const Navbar = () => {
 
@@ -12,15 +20,38 @@ export const Navbar = () => {
         },
         {
             title: 'Precios',
-            href: '/precios'
+            href: '/precios.html'
+        },
+        // {
+        //     title: 'Sedes',
+        //     href: '/sedes/centro'
+        // },
+        // {
+        //     title: 'Personal Training',
+        //     href: '/personal-training'
+        // },
+    ]
+    
+    const dropdownLinks = [
+        {
+            title: 'Centro',
+            href: '/sedes/centro.html'
         },
         {
-            title: 'Sedes',
-            href: '/sedes/centro'
+            title: 'Perón',
+            href: '/sedes/peron.html'
         },
         {
-            title: 'Personal Training',
-            href: '/personal-training'
+            title: 'El Solar',
+            href: '/sedes/el-solar.html'
+        },
+        {
+            title: 'Catalinas',
+            href: '/sedes/catalinas.html'
+        },
+        {
+            title: 'Distrito',
+            href: '/sedes/distrito.html'
         },
     ]
 
@@ -36,12 +67,28 @@ export const Navbar = () => {
                     {
                         links.map( link => (
                             <li key={link.href}>
-                                <Link href={link.href} className='text-white text-3xl'>
+                                <Link href={link.href} className='text-white text-lg lg:text-3xl'>
                                     {link.title}
                                 </Link>
                             </li>
                         ))
                     }
+                    <li>
+                    <DropdownMenu>
+                        <DropdownMenuTrigger className='text-white text-lg lg:text-3xl'>SEDES</DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            {
+                                dropdownLinks.map( link => (
+                                    <DropdownMenuItem key={link.href} className='m-0 p-0'>
+                                        <Link href={link.href} className='text-sm lg:text-lg size-full p-2'>
+                                            {link.title}
+                                        </Link>
+                                    </DropdownMenuItem>
+                                ))
+                            }
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                    </li>
                 </ul>
             </div>
         </nav>

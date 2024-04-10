@@ -17,7 +17,7 @@ export default function HomePage() {
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
         <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__portada"></div>
-        <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover -z-20">
+        <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-20">
           <source src="/assets/portada_home.mp4" type="video/mp4" />
           Tu navegador no soporta videos.
         </video>
@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__sedes bg-blend-multiply"></div>
         <div className="w-full xl:max-w-7xl	px-4 xl:px-0">
           <h3 className="text-jockey text-xs lg:text-3xl font-gotham-black">LA CADENA DE GIMNASIOS MAS GRANDES DE TUCUMÁN</h3>
-          <span className="mt-1 lg:mt-2 text-4xl lg:text-8xl text-white font-gotham-black block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>
+          <span className="mt-1 lg:mt-2 text-4xl lg:text-8xl text-white font-extrabold block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>
           <span className="text-white text-base lg:text-2xl font-gotham block mt-4 lg:mt-8">Conocé nuestras sedes</span>
           <div className="w-full grid grid-cols-1 justify-items-center md:grid-cols-2 lg:flex gap-4 lg:items-stretch lg:justify-center mt-4">
             <Link href="/sedes/centro" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
@@ -70,15 +70,15 @@ export default function HomePage() {
           </div>
           <div className="w-full flex gap-4 justify-center md:justify-start items-center px-4 mt-4">
             <Link href="https://play.google.com/store/apps/details?id=com.Intelinova.TgApp&hl=es">
-              <Image src={download_playstore} className="h-14 w-auto" alt='Descarga nuestra app en Google Playstore'/> 
+              <img src={download_playstore.src} loading="lazy" className="h-14 w-auto" alt='Descarga nuestra app en Google Playstore'/>
             </Link>
             <Link href="https://apps.apple.com/es/app/trainingym/id598249672">
-              <Image src={download_apple} className="h-14 w-auto" alt='Descarga nuestra app en iOS App Store'/> 
+              <img src={download_apple.src} loading="lazy" className="h-14 w-auto" alt='Descarga nuestra app en iOS App Store'/> 
             </Link>
           </div>
         </div>
         <div className="w-full md:w-3/5 mt-8 relative z-10 grow md:grow-0 flex justify-center items-center" data-aos="fade-left" data-aos-duration="500" data-aos-anchor="#downloadApp" data-aos-easing="ease-in-out">
-          <Image src={app} className="w-5/6 md:w-4/6 aspect-square object-contain" alt="Jockey GYM APP"/>
+          <img src={app.src} loading="lazy" className="w-5/6 md:w-4/6 aspect-square object-contain" alt="Jockey GYM APP"/>
         </div>
       </section>
     </main>

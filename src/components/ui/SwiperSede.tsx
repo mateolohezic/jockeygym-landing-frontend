@@ -14,7 +14,6 @@ interface Props{
 export const SwiperSede = ({images, sede}:Props) => {
 
   const breakpoints = {
-    // when window width is >= 320px
     320: {
       slidesPerView: 2
     },
@@ -45,7 +44,7 @@ export const SwiperSede = ({images, sede}:Props) => {
       {
         images.map((image, index) => (
           <SwiperSlide key={index}>
-            <Image src={image} priority={false} alt={`JOCKEY GYM Sede ${sede}`} className='aspect-square object-cover'/>
+            <img src={image.src} loading="lazy" alt={`JOCKEY GYM Sede ${sede}`} className='aspect-square object-cover'/>
           </SwiperSlide>
         ))
       }

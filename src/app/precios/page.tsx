@@ -161,7 +161,7 @@ export default function PreciosPage() {
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-end lg:justify-center items-center relative pb-8 lg:pb-0">
         <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__portada"></div>
-        <Image src={precios} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
+        <img src={precios.src} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
         <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-start justify-start relative text-start" data-aos="fade-right" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-4xl lg:text-3xl text-jockey lg:font-extrabold">JOCKEY GYM</h1>
           <h2 className="text-5xl lg:text-7xl lg:font-extrabold"><span className="block text-white">EL MEJOR GIMNASIO DE TUCUMÁN Y VOS,</span><span className="block text-white">JUNTOS POR TUS OBJETIVOS.</span></h2>
