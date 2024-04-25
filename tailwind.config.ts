@@ -17,6 +17,9 @@ const config: Config = {
           'dark': '#072B55',
           'transparent': '#C0E3FF'
         },
+        'invalid':{
+          DEFAULT: '#F45050'
+        }
       },
       fontFamily: {
         'gotham': ['Gotham', 'sans-serif'],

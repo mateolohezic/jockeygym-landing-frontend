@@ -1,27 +1,42 @@
 import Link from "next/link";
-import '../styles/home.css'
+import styles from '../styles/home.module.css'
 import { Logo } from "@/components";
-import Image from "next/image";
 import app from "../assets/home/app.png";
 import download_apple from "../assets/home/download_apple.png";
 import download_playstore from "../assets/home/download_playstore.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'JOCKEY GYM',
-  description: 'JOCKEY GYM',
+  title: 'Inicio - Jockey GYM',
+  description: "Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.",
+  keywords: ['gimnasio', 'Jockey GYM', 'jockey', 'tucuman', 'mejor', 'gym', 'ejercicio', 'salud'],
+  openGraph: {
+    title: 'Inicio - Jockey GYM',
+    description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
+    url: 'https://jockeygym.com.ar',
+    siteName: 'Jockey GYM',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: 'https://jockeygym.com.ar',
+    creator: 'Jockey GYM',
+    title: 'Inicio - Jockey GYM',
+    description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
+  },
 };
 
 export default function HomePage() {
   return (
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
-        <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__portada"></div>
-        <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-20">
+        <div className={`absolute top-0 left-0 w-full h-full z-0 ${styles.gradient__portada}`}></div>
+        <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50">
           <source src="/assets/portada_home.mp4" type="video/mp4" />
           Tu navegador no soporta videos.
         </video>
-        <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
+        <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative z-10" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-2xl lg:text-4xl text-white lg:font-extrabold -top-24 absolute">JOCKEY GYM</h1>
           <span className="text-7xl lg:text-8xl text-white lg:font-extrabold">NUNCA TE CONFORMES.</span>
           <h2 className="text-white text-base lg:text-4xl font-gotham">Descubrí el mejor gimnasio de Tucumán.</h2>
@@ -30,7 +45,7 @@ export default function HomePage() {
         <span className="absolute bottom-8 text-white text-sm font-gotham-black">No pares de entrenar.</span>
       </section>
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center pt-8 pb-24">
-        <div className="absolute top-0 left-0 w-full h-full -z-10 gradient__sedes bg-blend-multiply"></div>
+        <div className={`absolute top-0 left-0 w-full h-full -z-10 ${styles.gradient__sedes} bg-blend-multiply`}></div>
         <div className="w-full xl:max-w-7xl	px-4 xl:px-0">
           <h3 className="text-jockey text-xs lg:text-3xl font-gotham-black">LA CADENA DE GIMNASIOS MAS GRANDES DE TUCUMÁN</h3>
           <span className="mt-1 lg:mt-2 text-4xl lg:text-8xl text-white font-extrabold block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>

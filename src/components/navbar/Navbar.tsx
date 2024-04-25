@@ -13,6 +13,7 @@ import {
 
 export const Navbar = () => {
 
+    // Agregar .html a los links
     const links = [
         {
             title: 'Inicio',
@@ -20,7 +21,7 @@ export const Navbar = () => {
         },
         {
             title: 'Precios',
-            href: '/precios.html'
+            href: '/precios'
         },
         // {
         //     title: 'Sedes',
@@ -35,23 +36,23 @@ export const Navbar = () => {
     const dropdownLinks = [
         {
             title: 'Centro',
-            href: '/sedes/centro.html'
+            href: '/sedes/centro'
         },
         {
             title: 'Perón',
-            href: '/sedes/peron.html'
+            href: '/sedes/peron'
         },
         {
             title: 'El Solar',
-            href: '/sedes/el-solar.html'
+            href: '/sedes/el-solar'
         },
         {
             title: 'Catalinas',
-            href: '/sedes/catalinas.html'
+            href: '/sedes/catalinas'
         },
         {
             title: 'Distrito',
-            href: '/sedes/distrito.html'
+            href: '/sedes/distrito'
         },
     ]
 
