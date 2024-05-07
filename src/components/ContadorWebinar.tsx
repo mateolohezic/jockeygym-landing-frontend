@@ -38,7 +38,7 @@ export const ContadorWebinar = () => {
 
     return (
         days &&
-        <section className="mt-12 w-full flex justify-center items-end gap-20">
+        <section className="mt-12 w-full flex justify-between sm:justify-center items-end sm:gap-12 lg:gap-20 px-4 lg:px-0">
             <div className="flex flex-col justify-start items-center">
                 <span className="text-6xl text-jockey">{days}</span>
                 <span className="text-base font-gotham">Días</span>

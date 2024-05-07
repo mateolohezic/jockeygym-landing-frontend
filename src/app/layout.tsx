@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
-import { AOSProvider, Footer, Navbar } from "@/components";
+import { AOSProvider, Footer, Navbar, TawkTo } from "@/components";
 
 const bebasNeue = Bebas_Neue({ weight:'400', style:'normal', preload: true, subsets: ['latin']});
 
@@ -91,7 +91,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <Footer/>
         <AOSProvider/>
-        {/* <TawkTo/> */}
+        <TawkTo/>
       </body>
     </html>
   );

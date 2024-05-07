@@ -24,7 +24,7 @@ END:VCALENDAR
             <a
                 href={`data:text/calendar;charset=utf-8,${encodeURIComponent(urlEventoCalendario)}`}
                 download={`${tituloEvento}.ics`}
-                className="bg-jockey w-full py-4 px-8 rounded-lg text-2xl text-white font-gotham-black"
+                className="bg-jockey w-full py-3 lg:py-4 px-4 lg:px-8 rounded-lg text-xl lg:text-2xl text-white font-gotham-black"
                 target="_blank"
             >
                 Agendar en mi calendario
