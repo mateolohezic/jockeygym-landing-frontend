@@ -21,7 +21,11 @@ export const Navbar = () => {
         },
         {
             title: 'Precios',
-            href: '/precios'
+            href: '/precios.html'
+        },
+        {
+            title: 'Webinar',
+            href: '/webinar/inscripcion.html'
         },
         // {
         //     title: 'Sedes',
@@ -36,23 +40,23 @@ export const Navbar = () => {
     const dropdownLinks = [
         {
             title: 'Centro',
-            href: '/sedes/centro'
+            href: '/sedes/centro.html'
         },
         {
             title: 'Perón',
-            href: '/sedes/peron'
+            href: '/sedes/peron.html'
         },
         {
             title: 'El Solar',
-            href: '/sedes/el-solar'
+            href: '/sedes/el-solar.html'
         },
         {
             title: 'Catalinas',
-            href: '/sedes/catalinas'
+            href: '/sedes/catalinas.html'
         },
         {
             title: 'Distrito',
-            href: '/sedes/distrito'
+            href: '/sedes/distrito.html'
         },
     ]
 
@@ -64,7 +68,7 @@ export const Navbar = () => {
                         <Logo className='h-12' pathClassName='fill-white'/>
                     </Link>
                 </div>
-                <ul className='flex justify-end items-center gap-8'>
+                <ul className='flex justify-end items-center gap-4 lg:gap-8'>
                     {
                         links.map( link => (
                             <li key={link.href}>

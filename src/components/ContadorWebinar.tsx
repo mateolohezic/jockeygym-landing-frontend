@@ -4,14 +4,16 @@ import { useEffect, useState } from "react";
 
 export const ContadorWebinar = () => {
 
-    const [days, setDays] = useState(0);
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+    const [days, setDays] = useState<number>();
+    const [hours, setHours] = useState<number>();
+    const [minutes, setMinutes] = useState<number>();
+    const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-05-03T21:00:00'
-        const difference = new Date(fechaWebinar) - new Date();
+        const fechaWebinar:string = '2024-05-14T21:00:00';
+        const fecha:any = new Date(fechaWebinar);
+        const hoy:any = new Date();
+        const difference = fecha - hoy;
         if (difference > 0) {
             const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24));
             const hoursLeft = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -35,6 +37,7 @@ export const ContadorWebinar = () => {
     }, []);
 
     return (
+        days &&
         <section className="mt-12 w-full flex justify-center items-end gap-20">
             <div className="flex flex-col justify-start items-center">
                 <span className="text-6xl text-jockey">{days}</span>

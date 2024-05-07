@@ -1,6 +1,7 @@
 'use client'
 
 import { useForm, type SubmitHandler } from "react-hook-form"
+import axios from 'axios';
 
 type Inputs = {
     name: string,
@@ -15,6 +16,86 @@ export const InscripcionWebinar = () => {
     const onSubmit: SubmitHandler<Inputs> = async (data: Inputs) => {
         console.log(data);
     }
+    
+    // const url = 'https://jockey-gym.bitrix24.es/rest/24857/cghnh26jknr3o7nl';
+    const hola = async () => {
+        // const response = await fetch(`https://jockey-gym.bitrix24.es/rest/24857/i3e126kjvxzjarjj/crm.contact.add.json?FIELDS[NAME]=Pruebaaaa&FIELDS[LAST_NAME]=Pruebita&FIELDS[EMAIL][0][VALUE]=prueba@example.com&FIELDS[PHONE][0][VALUE]=555888`, {
+        // const response = await fetch(`https://jockey-gym.bitrix24.es/bitrix/services/main/ajax.php?action=crm.site.form.fill`, {
+        // const response = await fetch(`https://jockey-gym.bitrix24.es/rest/24857/i3e126kjvxzjarjj/crm.site.form.fill`, {
+        // const response = await fetch(`https://jockey-gym.bitrix24.es/rest/24857/i3e126kjvxzjarjj/crm.site.form.fill.json`, {
+        //     method: 'POST',
+        //     headers: {
+        //       'Content-Type': 'application/json',
+            //   'Authorization': `Bearer-cghnh26jknr3o7nl`,
+            // },
+            // body: JSON.stringify({
+            //     id: 101,
+            //     sec: 'e76y6z',
+                // properties: {},
+                // consents: {},
+                // recaptcha: undefined,
+                // timeZoneOffset: 180,
+                // lang: 'la',
+                // entities: [],
+                // security_sign: undefined,
+                // trace: {
+                //     url:"https://b24-vu4prj.bitrix24.site/crm_form3/",
+                //     ref:"https://jockey-gym.bitrix24.es/",
+                //     device:{
+                //         isMobile:true
+                //     },
+                //     tags:{
+                //         ts:1715007205,
+                //         list:{},
+                //         gclid:null
+                //     },
+                //     client:{},
+                //     pages:{
+                //         list:[
+                //             ["https://b24-vu4prj.bitrix24.site/crm_form3/",
+                //             1715007256,
+                //             "Formulario de Landing"]
+                //         ]
+                //     },
+                //     gid:"j5rgt15ql3ucmj964lfwkdcvzpkx49vq",
+                //     previous:{
+                //         list:[]
+                //     }
+                // },
+                // values: {
+                //     CONTACT_NAME:["Pruebaasdasdasd"],
+                //     CONTACT_LAST_NAME:["asdfasfmñfads fasfkaslfasd "],
+                //     CONTACT_PHONE:["+381-56-901-69"],
+                //     CONTACT_EMAIL:["pruaeba@gmail.com"],
+                    // DEAL_UF_CRM_1595281876:["54"],
+                    // DEAL_UF_CRM_1653974741:["917"],
+                    // CONTACT_UF_CRM_1621525987:[],
+                    // CONTACT_UF_CRM_1621526114:[],
+                    // CONTACT_UF_CRM_1621526183:[]
+        //         }
+        //     })
+        // });
+
+        const url = 'https://jockey-gym.bitrix24.es/rest/24857/i3e126kjvxzjarjj/crm.site.form.fill.json';
+
+        const data = {
+            action: 'crm.site.form.fill',
+            id: 4,
+            sec: 'y4ka2k',
+            values: {
+                CONTACT_NAME: ['Pruebita'],
+                CONTACT_LAST_NAME: ['pruebita'],
+                CONTACT_PHONE: ['+543815690169'],
+                CONTACT_EMAIL: ['prueba@gmail.com']
+            }
+        };
+
+        const response = await axios.post(url, data)
+
+        console.log(response)
+    }
+
+    // hola()
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col font-gotham">

@@ -18,7 +18,5 @@ export const AOSProvider = () => {
 
     AOS.init()
 
-    return (
-        <></>
-    )
+    return null
 }

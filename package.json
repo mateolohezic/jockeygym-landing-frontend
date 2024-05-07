@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@2bad/bitrix": "^2.5.1",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "aos": "^2.3.4",
+    "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.366.0",

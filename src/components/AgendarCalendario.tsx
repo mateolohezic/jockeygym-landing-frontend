@@ -1,18 +1,20 @@
 export const AgendarCalendario = () => {
-    
-    const fechaEvento = '2024-05-03T21:00:00';
+
+    const fechaEvento = '2024-05-14T21:30:00';
+    const fechaFin = '2024-05-14T23:00:00';
     const tituloEvento = 'Webinar gratuito - Jockey GYM';
-    const descripcionEvento = 'Este es un webinar gratuito sobre el tema X. Haz clic en el enlace para unirte virtualmente.';
-    const urlWebinar = 'https://zoom.com/webinar';
+    const descripcionEvento = 'Webinar gratuito - Jockey GYM.';
+    // const urlWebinar = 'https://zoom.com/webinar';
+    // URL:${urlWebinar}
 
     const urlEventoCalendario = `
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
 DTSTART:${fechaEvento}
+DTEND:${fechaFin}
 SUMMARY:${tituloEvento}
 DESCRIPTION:${descripcionEvento}
-URL:${urlWebinar}
 END:VEVENT
 END:VCALENDAR
     `.trim();

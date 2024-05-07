@@ -31,10 +31,10 @@ export default function PreciosPage() {
     {
       title:'distrito',
       properties: [
-        {
-          name: 'Matricula',
-          value: '18.900'
-        },
+        // {
+        //   name: 'Matricula',
+        //   value: '18.900'
+        // },
         {
           name: 'Mensual',
           value: '36.900'
@@ -58,10 +58,10 @@ export default function PreciosPage() {
     {
       title:'el solar',
       properties: [
-        {
-          name: 'Matricula',
-          value: '18.900'
-        },
+        // {
+        //   name: 'Matricula',
+        //   value: '18.900'
+        // },
         {
           name: 'Mensual',
           value: '36.900'
@@ -85,10 +85,10 @@ export default function PreciosPage() {
     {
       title:'av. perón',
       properties: [
-        {
-          name: 'Matricula',
-          value: '18.900'
-        },
+        // {
+        //   name: 'Matricula',
+        //   value: '18.900'
+        // },
         {
           name: 'Mensual',
           value: '36.900'
@@ -112,18 +112,18 @@ export default function PreciosPage() {
     {
       title:'centro',
       properties: [
-        {
-          name: 'Matricula',
-          value: '18.900'
-        },
+        // {
+        //   name: 'Matricula',
+        //   value: '18.900'
+        // },
         {
           name: 'Mensual',
           value: '32.900'
         },
-        {
-          name: 'Matricula Trimestral',
-          value: '9.900'
-        },
+        // {
+        //   name: 'Matricula Trimestral',
+        //   value: '9.900'
+        // },
         {
           name: 'Trimestre',
           value: '84.900'
@@ -143,18 +143,18 @@ export default function PreciosPage() {
     {
       title:'catalinas',
       properties: [
-        {
-          name: 'Matricula',
-          value: '18.900'
-        },
+        // {
+        //   name: 'Matricula',
+        //   value: '18.900'
+        // },
         {
           name: 'Mensual',
           value: '32.900'
         },
-        {
-          name: 'Matricula Trimestral',
-          value: '9.900'
-        },
+        // {
+        //   name: 'Matricula Trimestral',
+        //   value: '9.900'
+        // },
         {
           name: 'Trimestre',
           value: '84.900'
