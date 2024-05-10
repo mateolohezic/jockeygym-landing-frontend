@@ -12,14 +12,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Webinar - Jockey GYM',
         description: '3 claves para desbloquear tu potencial y cambiar tu vida para siempre.',
-        url: 'https://jockeygym.com.ar/webinar/inscripcion.html',
+        url: 'https://jockeygym.com.ar/webinar/inscripcion',
         siteName: 'Webinar - Jockey GYM',
         locale: 'es_AR',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        site: 'https://jockeygym.com.ar/webinar/inscripcion.html',
+        site: 'https://jockeygym.com.ar/webinar/inscripcion',
         creator: 'Jockey GYM',
         title: 'Webinar - Jockey GYM',
         description: '3 claves para desbloquear tu potencial y cambiar tu vida para siempre.',
@@ -66,7 +66,7 @@ export default function InscripcionWebinarPage() {
                 <div className='w-full lg:w-1/2 lg:min-h-lvh px-4 lg:px-8 flex flex-col justify-center items-center py-12 lg:py-24 relative'>
                     <h2 className='w-full text-center text-jockey text-4xl'>WEBINAR GRATUITO</h2>
                     <h3 className='mt-2 w-full text-center text-3xl font-gotham-black'>3 claves para desbloquear tu potencial y cambiar tu vida para siempre.</h3>
-                    <span className='mt-4 mb-8 w-full font-gotham-black text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> JUEVES 9 DE MAYO</span>
+                    <span className='mt-4 mb-8 w-full font-gotham-black text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> MARTES 14 DE MAYO</span>
                     {/* <InscripcionWebinar/> */}
                     <div className="mt-8 w-full text-center">
                         <Link href='https://b24-z4vzm6.bitrix24.site/crm_form_hquvb/' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
@@ -107,16 +107,17 @@ export default function InscripcionWebinarPage() {
                             <p className='w-full text-lg lg:text-2xl text-center lg:text-end text-jockey'>Se que tenes poco tiempo, yo tambien.</p>
                             <p className='w-full text-4xl lg:text-6xl text-center lg:text-end text-white'>¿Por qué dedicar tiempo <span className='block text-white'>a esta <b className='text-jockey font-normal'>Masterclass</b>?</span></p>
                         </div>
-                        <ul className='w-full lg:w-3/5 text-center lg:text-start text-base lg:text-lg font-gotham flex flex-col justify-start items-start gap-6 lg:gap-2'>
-                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Sos de los que constantemente dicen: &ldquo;El proximo lunes arranco el gym&rdquo; o &ldquo;mañana empiezo la dieta&rdquo;.</span></li>
-                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Escuchas a todo el mundo hablar de lo bueno que es entrenar pero no sabes como te puede ayudar a vos.</span></li>
-                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Te cuesta mantener en el tiempo los objetivos que te propones.</span></li>
-                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Tenes problemas de salud crónicos y pensas que la única solución es una pastilla de por vida.</span></li>
+                        <ul className='w-full lg:w-3/5 text-center lg:text-start text-base lg:text-lg font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-6 lg:gap-2'>
+                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Vas a aprender <b className="text-white font-gotham-black">métodos efectivos para cambiar tus hábitos</b> y, así, <b className="text-white font-gotham-black">transformar tu vida.</b></span></li>
+                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'><b className="text-white font-gotham-black">+30 años de experiencia</b> formando y fomentando hábitos saludables.</span></li>
+                            <li className='flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-white text-xl mr-1.5'/><span className='w-full lg:w-5/6 text-white'>Todo lo que te enseñamos lo probamos nosotros mismos, y <b className="text-white font-gotham-black">funciona</b>.</span></li>
                         </ul>
                     </div>
                     <div className="mt-12 lg:mt-24 w-full text-center">
-                        <Link href='https://b24-z4vzm6.bitrix24.site/crm_form_hquvb/' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
-                            Reservar mi lugar
+                        <span className="text-white text-base lg:text-lg xl:text-2xl font-gotham-black mb-4 block">¡Estas a un clic de dar el primer paso para empezar a vivir la vida que queres!</span>
+                        <Link href='https://b24-z4vzm6.bitrix24.site/crm_form_hquvb/' className="block bg-jockey w-full py-3 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
+                            <span className="hidden sm:inline text-white">Estoy listo, quiero reservar mi lugar</span>
+                            <span className="inline sm:hidden text-white">Reservar mi lugar</span>
                         </Link>
                     </div>
                 </div>

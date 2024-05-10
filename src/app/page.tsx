@@ -49,10 +49,10 @@ export default function HomePage() {
         <div className="w-full max-w-7xl flex flex-col justify-center items-center">
           <h2 className='w-full text-center text-jockey text-4xl'>WEBINAR GRATUITO</h2>
           <h3 className='mt-2 w-full text-center text-3xl font-gotham-black text-white'>3 claves para desbloquear tu potencial y cambiar tu vida para siempre.</h3>
-          <span className='mt-4 mb-8 w-full font-gotham-black text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> JUEVES 9 DE MAYO</span>
+          <span className='mt-4 mb-8 w-full font-gotham-black text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> MARTES 14 DE MAYO</span>
           <p className="text-white text-xl font-gotham">Inscribite ahora a nuestro webinar gratuito para </p>
           <div className="mt-8 w-full text-center">
-              <Link href='/webinar/inscripcion.html' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
+              <Link href='/webinar/inscripcion' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
                   Inscribirme ahora
               </Link>
           </div>
@@ -65,23 +65,23 @@ export default function HomePage() {
           <span className="mt-1 lg:mt-2 text-4xl lg:text-8xl text-white font-extrabold block">UNA SEDE JOCKEY <span className="text-white block lg:inline">CERCA TUYO</span></span>
           <span className="text-white text-base lg:text-2xl font-gotham block mt-4 lg:mt-8">Conocé nuestras sedes</span>
           <div className="w-full grid grid-cols-1 justify-items-center md:grid-cols-2 lg:flex gap-4 lg:items-stretch lg:justify-center mt-4">
-            <Link href="/sedes/centro.html" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/centro" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">CENTRO</span>
             </Link>
-            <Link href="/sedes/peron.html" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/peron" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">PERÓN</span>
             </Link>
-            <Link href="/sedes/el-solar.html" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/el-solar" className="md:justify-self-end border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">EL SOLAR</span>
             </Link>
-            <Link href="/sedes/catalinas.html" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/catalinas" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">CATALINAS</span>
             </Link>
-            <Link href="/sedes/distrito.html" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
+            <Link href="/sedes/distrito" className="md:justify-self-start border-2 border-white text-3xl lg:text-2xl w-4/5 lg:w-32 h-14 lg:h-12 rounded-lg flex flex-col justify-center items-center bg-[#FFFFFF25] lg:bg-transparent hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">
               <span className="block leading-none text-white sr-only">SEDE</span>
               <span className="block leading-none text-white">DISTRITO</span>
             </Link>

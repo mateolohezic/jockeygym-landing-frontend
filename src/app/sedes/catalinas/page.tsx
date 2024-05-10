@@ -1,12 +1,12 @@
 import { SwiperSede } from "@/components";
-import '../../../styles/sedes.css'
-import sede_catalinas_portada from '../../../assets/sedes/catalinas/sede_catalinas_portada.webp'
-import sede_catalinas_1 from '../../../assets/sedes/catalinas/sede_catalinas_1.webp'
-import sede_catalinas_2 from '../../../assets/sedes/catalinas/sede_catalinas_2.webp'
-import sede_catalinas_3 from '../../../assets/sedes/catalinas/sede_catalinas_3.webp'
-import sede_catalinas_4 from '../../../assets/sedes/catalinas/sede_catalinas_4.webp'
-import sede_catalinas_5 from '../../../assets/sedes/catalinas/sede_catalinas_5.webp'
-import sede_catalinas_6 from '../../../assets/sedes/catalinas/sede_catalinas_6.webp'
+import styles from '../../../styles/sedes.module.css';
+import sede_catalinas_portada from '../../../assets/sedes/catalinas/sede_catalinas_portada.webp';
+import sede_catalinas_1 from '../../../assets/sedes/catalinas/sede_catalinas_1.webp';
+import sede_catalinas_2 from '../../../assets/sedes/catalinas/sede_catalinas_2.webp';
+import sede_catalinas_3 from '../../../assets/sedes/catalinas/sede_catalinas_3.webp';
+import sede_catalinas_4 from '../../../assets/sedes/catalinas/sede_catalinas_4.webp';
+import sede_catalinas_5 from '../../../assets/sedes/catalinas/sede_catalinas_5.webp';
+import sede_catalinas_6 from '../../../assets/sedes/catalinas/sede_catalinas_6.webp';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function CatalinasPage() {
   return (
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative">
-        <div className="absolute top-0 left-0 w-full h-full -z-10 portada"></div>
+        <div className={`absolute top-0 left-0 w-full h-full -z-10 ${styles.portada}`}></div>
         <img src={sede_catalinas_portada.src} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
         <div className="w-full xl:max-w-7xl	 px-4 xl:px-0 flex flex-col items-center justify-center relative text-center" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-xl lg:text-3xl text-jockey font-extrabold">JOCKEY GYM</h1>

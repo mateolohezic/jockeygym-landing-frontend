@@ -27,13 +27,10 @@ export const ContadorWebinar = () => {
     };
 
     useEffect(() => {
-
         const timer = setInterval(() => {
             calculateTimeLeft();
         }, 1000);
-
         return () => clearInterval(timer);
-
     }, []);
 
     return (

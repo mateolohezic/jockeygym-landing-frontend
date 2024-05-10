@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from "next-themes"
-import { IoMoon, IoMoonOutline, IoSunny, IoSunnyOutline } from "react-icons/io5";
+import { IoMoon, IoMoonOutline } from "react-icons/io5";
 
 export function ThemeToggle() {
 

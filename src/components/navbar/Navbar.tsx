@@ -1,19 +1,9 @@
-import Image from 'next/image'
-import logo from '../../assets/logo_jockey_gym.png'
 import Link from 'next/link'
 import { Logo } from '../ui/Logo'
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 export const Navbar = () => {
 
-    // Agregar .html a los links
     const links = [
         {
             title: 'Inicio',
@@ -21,16 +11,12 @@ export const Navbar = () => {
         },
         {
             title: 'Precios',
-            href: '/precios.html'
+            href: '/precios'
         },
         {
             title: 'Webinar',
-            href: '/webinar/inscripcion.html'
+            href: '/webinar/inscripcion'
         },
-        // {
-        //     title: 'Sedes',
-        //     href: '/sedes/centro'
-        // },
         // {
         //     title: 'Personal Training',
         //     href: '/personal-training'
@@ -40,23 +26,23 @@ export const Navbar = () => {
     const dropdownLinks = [
         {
             title: 'Centro',
-            href: '/sedes/centro.html'
+            href: '/sedes/centro'
         },
         {
             title: 'Perón',
-            href: '/sedes/peron.html'
+            href: '/sedes/peron'
         },
         {
             title: 'El Solar',
-            href: '/sedes/el-solar.html'
+            href: '/sedes/el-solar'
         },
         {
             title: 'Catalinas',
-            href: '/sedes/catalinas.html'
+            href: '/sedes/catalinas'
         },
         {
             title: 'Distrito',
-            href: '/sedes/distrito.html'
+            href: '/sedes/distrito'
         },
     ]
 

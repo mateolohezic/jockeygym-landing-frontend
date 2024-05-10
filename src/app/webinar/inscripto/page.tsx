@@ -9,14 +9,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Gracias por inscribirte - Jockey GYM',
         description: '3 claves para desbloquear tu potencial y cambiar tu vida para siempre.',
-        url: 'https://jockeygym.com.ar/webinar/inscripto.html',
+        url: 'https://jockeygym.com.ar/webinar/inscripto',
         siteName: 'Gracias por inscribirte - Jockey GYM',
         locale: 'es_AR',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        site: 'https://jockeygym.com.ar/webinar/inscripto.html',
+        site: 'https://jockeygym.com.ar/webinar/inscripto',
         creator: 'Jockey GYM',
         title: 'Gracias por inscribirte - Jockey GYM',
         description: '3 claves para desbloquear tu potencial y cambiar tu vida para siempre.',

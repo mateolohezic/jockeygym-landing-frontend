@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import precios from '../../assets/precios.webp'
 import styles from '../../styles/precios.module.css'

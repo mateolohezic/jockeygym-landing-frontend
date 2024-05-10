@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import precios from '../../../assets/precios.webp'
 import { SwiperSede } from "@/components";
-import '../../../styles/sedes.css'
+import styles from '../../../styles/sedes.module.css';
 import sede_distrito_portada from '../../../assets/sedes/distrito/sede_distrito_portada.webp'
 import sede_distrito_1 from '../../../assets/sedes/distrito/sede_distrito_1.webp'
 import sede_distrito_2 from '../../../assets/sedes/distrito/sede_distrito_2.webp'
@@ -41,7 +38,7 @@ export default function DistritoPage() {
   return (
     <main className="grow w-full">
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative">
-        <div className="absolute top-0 left-0 w-full h-full -z-10 portada"></div>
+        <div className={`absolute top-0 left-0 w-full h-full -z-10 ${styles.portada}`}></div>
         <img src={sede_distrito_portada.src} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
         <div className="w-full xl:max-w-7xl	 px-4 xl:px-0 flex flex-col items-center justify-center relative text-center" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-xl lg:text-3xl text-jockey font-extrabold">JOCKEY GYM</h1>

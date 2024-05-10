@@ -3,8 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../styles/swiperSede.css'
-import Image, { type StaticImageData } from 'next/image';
-import foto from '../../assets/home/sucursal.webp'
+import type { StaticImageData } from 'next/image';
 
 interface Props{
   images: Array<StaticImageData>
