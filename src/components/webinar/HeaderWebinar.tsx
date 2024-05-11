@@ -3,10 +3,13 @@
 import { FaCalendarPlus } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 
 export const HeaderWebinar = () => {
     
+    const pathname = usePathname()
+
     const [days, setDays] = useState<number>();
     const [hours, setHours] = useState<number>();
     const [minutes, setMinutes] = useState<number>();
@@ -42,6 +45,13 @@ export const HeaderWebinar = () => {
         const isClosed = localStorage.getItem('WHC') === 'true';
         setClosed(isClosed);
     }, []);
+
+    useEffect(() => {
+        if(pathname === '/webinar/inscripcion/' || pathname === '/webinar/inscripto/'){
+            setClosed(true);
+        }
+    }, [pathname])
+    
 
     const headerProperties = {
         expanded: 'opacity-100 z-50',
