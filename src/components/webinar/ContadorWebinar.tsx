@@ -33,6 +33,14 @@ export const ContadorWebinar = () => {
         return () => clearInterval(timer);
     }, []);
 
+    useEffect(() => {
+        const isClosed = localStorage.getItem('WHC') === 'true';
+        if(!isClosed){
+            localStorage.setItem('WHC', 'true');
+        }
+    }, [])
+    
+
     return (
         days &&
         <section className="mt-12 w-full flex justify-between sm:justify-center items-end sm:gap-12 lg:gap-20 px-4 lg:px-0">

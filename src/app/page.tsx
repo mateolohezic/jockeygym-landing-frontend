@@ -45,14 +45,14 @@ export default function HomePage() {
         </div>
         <span className="absolute bottom-8 text-white text-sm font-gotham-black">No pares de entrenar.</span>
       </section>
-      <section className="bg-black py-24 flex justify-center items-center">
-        <div className="w-full max-w-7xl flex flex-col justify-center items-center">
-          <h2 className='w-full text-center text-jockey text-4xl'>WEBINAR GRATUITO</h2>
-          <h3 className='mt-2 w-full text-center text-3xl font-gotham-black text-white'>3 claves para desbloquear tu potencial y cambiar tu vida para siempre.</h3>
-          <span className='mt-4 mb-8 w-full font-gotham-black text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> MARTES 14 DE MAYO</span>
-          <p className="text-white text-xl font-gotham">Inscribite ahora a nuestro webinar gratuito para </p>
-          <div className="mt-8 w-full text-center">
-              <Link href='/webinar/inscripcion' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
+      <section className="bg-black py-12 lg:py-24 flex justify-center items-center">
+        <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center">
+          <h2 className='w-full text-center text-jockey text-2xl lg:text-4xl'>WEBINAR GRATUITO</h2>
+          <h3 className='mt-2 w-full text-center text-xl lg:text-3xl font-gotham-black text-white'>3 claves para desbloquear tu potencial y cambiar tu vida para siempre.</h3>
+          <span className='mt-4 mb-4 lg:mb-8 w-full font-gotham-black text-sm lg:text-base text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> MARTES 14 DE MAYO</span>
+          <p className="text-white text-xl font-gotham text-center hidden lg:block">Inscribite ahora a nuestro webinar gratuito para </p>
+          <div className="mt-2 lg:mt-8 w-full text-center">
+              <Link href='/webinar/inscripcion' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-2xl lg:text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
                   Inscribirme ahora
               </Link>
           </div>

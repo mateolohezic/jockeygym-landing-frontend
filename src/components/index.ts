@@ -13,5 +13,6 @@ export { TawkTo } from './chatbot/TawkTo';
 
 export { InscripcionWebinar } from './forms/InscripcionWebinar';
 
-export { AgendarCalendario } from './AgendarCalendario';
-export { ContadorWebinar } from './ContadorWebinar';
+export { HeaderWebinar } from './webinar/HeaderWebinar';
+export { ContadorWebinar } from './webinar/ContadorWebinar';
+export { AgendarCalendario } from './webinar/AgendarCalendario';

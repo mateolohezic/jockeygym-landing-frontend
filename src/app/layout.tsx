@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
-import { AOSProvider, Footer, Navbar, TawkTo } from "@/components";
+import { AOSProvider, Footer, HeaderWebinar, Navbar, TawkTo } from "@/components";
 
 const bebasNeue = Bebas_Neue({ weight:'400', style:'normal', preload: true, subsets: ['latin']});
 
@@ -88,6 +88,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es">
       <body className={`w-full min-h-svh flex flex-col items-center justify-between ${bebasNeue.className}`}>
         <Navbar/>
+        <HeaderWebinar/>
         {children}
         <Footer/>
         <AOSProvider/>
