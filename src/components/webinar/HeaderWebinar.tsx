@@ -58,8 +58,9 @@ export const HeaderWebinar = () => {
         hidden: 'opacity-0 -translate-y-[100%] z-10'
     }
 
+    if(!days) return null
+
     return (
-        days &&
         <div className={`fixed top-0 w-full ${ closed ? 'z-10' : 'z-50'}`} data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
             <header className={`w-full bg-jockey absolute top-0 left-0 px-4 xl:px-0 py-4 flex flex-col justify-center items-center shadow-md ${ closed ? headerProperties.hidden : headerProperties.expanded } transition-all duration-300 ease-in-out`}>
                 <div className="w-full xl:px-4 flex justify-end items-center">

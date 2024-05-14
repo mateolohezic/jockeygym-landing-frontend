@@ -1,7 +1,9 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from "swiper/modules";
 import 'swiper/css';
+import 'swiper/css/autoplay';
 import '../styles/swiperSede.css'
 import type { StaticImageData } from 'next/image';
 
@@ -38,11 +40,15 @@ export const SwiperSede = ({images, sede}:Props) => {
       breakpoints={breakpoints}
       loop={true}
       className="w-full"
-      height={480}
+      autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
     >
       {
         images.map((image, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide className='bg-white' key={index}>
             <img src={image.src} loading="lazy" alt={`JOCKEY GYM Sede ${sede}`} className='aspect-square object-cover'/>
           </SwiperSlide>
         ))

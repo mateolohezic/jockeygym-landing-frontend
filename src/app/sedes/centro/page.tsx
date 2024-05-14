@@ -10,6 +10,7 @@ import sede_centro_6 from '../../../assets/sedes/centro/sede_centro_6.webp'
 import sede_centro_7 from '../../../assets/sedes/centro/sede_centro_7.webp'
 import sede_centro_8 from '../../../assets/sedes/centro/sede_centro_8.webp'
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Sede Centro',
@@ -47,7 +48,7 @@ export default function CentroPage() {
           <div className="bg-jockey py-2 lg:py-4 px-4 lg:px-8 rounded-lg flex justify-center items-center leading-none">
             <h3 className="text-3xl lg:text-5xl font-extrabold text-white relative top-0.5">SAN MARTÍN 451</h3>
           </div>
-          {/* <Link href="/" className="mt-12 flex justify-center items-center text-white text-3xl border-2 px-8 py-4 rounded-lg hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">INSCRIBIRME</Link> */}
+          <Link href="http://wa.me/message/YZ4SRN7UYWSIO1" target="_blank" className="mt-8 flex justify-center items-center text-white text-3xl border-2 px-6 py-2 rounded-3xl bg-[#FFFFFF26] hover:bg-[#FFFFFF80] transition-all duration-300 ease-in-out">INSCRIBIRME</Link>
         </div>
       </section>
       <section className="w-full lg:min-h-screen flex flex-col-reverse lg:flex-row-reverse justify-between items-stretch">
@@ -64,7 +65,7 @@ export default function CentroPage() {
           <p className="mt-1 lg:mt-2 font-gotham w-full lg:w-5/6 text-sm lg:text-lg indent-4 lg:indent-8">Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.</p>
         </div>
       </section>
-      <section className="w-full lg:min-h-screen pt-12 lg:pt-0 bg-jockey flex flex-col justify-between items-center">
+      <section className="w-full lg:min-h-screen pt-12 lg:pt-8 bg-jockey flex flex-col justify-between items-center">
         <div className="grow w-full flex flex-col justify-end items-center" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
           <span className="flex flex-col justify-center items-center text-center">
             <span className="font-gotham text-white text-2xl lg:text-4xl w-full">SEDE</span>
@@ -86,7 +87,8 @@ export default function CentroPage() {
               </div>
             </div>
           </div>
-          <h3 className="mt-12 lg:mt-16 font-gotham-black text-white text-xl lg:text-4xl mb-4 lg:mb-8">¡Conocé tu proximo hogar!</h3>
+          <h3 className="mt-6 font-gotham-black text-white text-xl lg:text-3xl">¡Conocé tu proximo hogar!</h3>
+          <Link href="http://wa.me/message/YZ4SRN7UYWSIO1" target="_blank" className="mt-4 lg:mt-6 mb-6 flex justify-center items-center text-jockey text-3xl px-6 py-2 rounded-3xl bg-white hover:opacity-85 transition-all duration-300 ease-in-out">INSCRIBIRME</Link>
         </div>
         <div className="w-full flex flex-col justify-center items-center">
           <SwiperSede images={images} sede='Centro'/>

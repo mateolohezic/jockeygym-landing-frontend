@@ -16,3 +16,6 @@ export { InscripcionWebinar } from './forms/InscripcionWebinar';
 export { HeaderWebinar } from './webinar/HeaderWebinar';
 export { ContadorWebinar } from './webinar/ContadorWebinar';
 export { AgendarCalendario } from './webinar/AgendarCalendario';
+
+export { SwiperPreguntas } from './hot-sale/SwiperPreguntas'
+export { SwiperFotos } from './hot-sale/SwiperFotos'
