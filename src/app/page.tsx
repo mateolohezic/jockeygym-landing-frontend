@@ -41,22 +41,9 @@ export default function HomePage() {
           <h1 className="text-2xl lg:text-4xl text-white lg:font-extrabold -top-24 absolute">JOCKEY GYM</h1>
           <span className="text-7xl lg:text-8xl text-white lg:font-extrabold">NUNCA TE CONFORMES.</span>
           <h2 className="text-white text-base lg:text-4xl font-gotham">Descubrí el mejor gimnasio de Tucumán.</h2>
-          <Link href="/" className="mt-8 flex justify-center items-center text-white text-xl lg:text-2xl border-2 px-4 lg:px-8 py-2 lg:py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
+          <Link href="https://b24-vu4prj.bitrix24.site/crm_form_dcuvx/" className="mt-8 flex justify-center items-center text-white text-xl lg:text-2xl border-2 px-4 lg:px-8 py-2 lg:py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
         </div>
         <span className="absolute bottom-8 text-white text-sm font-gotham-black">No pares de entrenar.</span>
-      </section>
-      <section className="bg-black py-12 lg:py-24 flex justify-center items-center">
-        <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center">
-          <h2 className='w-full text-center text-jockey text-2xl lg:text-4xl'>WEBINAR GRATUITO</h2>
-          <h3 className='mt-2 w-full text-center text-xl lg:text-3xl font-gotham-black text-white'>3 claves para desbloquear tu potencial y cambiar tu vida para siempre.</h3>
-          <span className='mt-4 mb-4 lg:mb-8 w-full font-gotham-black text-sm lg:text-base text-jockey flex justify-center items-center gap-2'><FaCalendarPlus className='fill-jockey inline relative -top-[2px]'/> MARTES 14 DE MAYO</span>
-          <p className="text-white text-xl font-gotham text-center hidden lg:block">Inscribite ahora a nuestro webinar gratuito para </p>
-          <div className="mt-2 lg:mt-8 w-full text-center">
-              <Link href='/webinar/inscripcion' className="block bg-jockey w-full py-2 px-8 rounded-lg text-white text-2xl lg:text-3xl hover:bg-jockey-light hover:scale-[1.025] transition-all duration-300 ease-in-out">
-                  Inscribirme ahora
-              </Link>
-          </div>
-        </div>
       </section>
       <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center pt-8 pb-24">
         <div className={`absolute top-0 left-0 w-full h-full -z-10 ${styles.gradient__sedes} bg-blend-multiply`}></div>

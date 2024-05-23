@@ -88,7 +88,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es">
       <body className={`w-full min-h-svh flex flex-col items-center justify-between ${bebasNeue.className}`}>
         <Navbar/>
-        <HeaderWebinar/>
+        {/* <HeaderWebinar/> */}
         {children}
         <Footer/>
         <AOSProvider/>

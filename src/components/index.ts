@@ -19,3 +19,5 @@ export { AgendarCalendario } from './webinar/AgendarCalendario';
 
 export { SwiperPreguntas } from './hot-sale/SwiperPreguntas'
 export { SwiperFotos } from './hot-sale/SwiperFotos'
+export { SwiperSedes } from './hot-sale/SwiperSedes'
+export { ContadorHotSale } from './hot-sale/ContadorHotSale'

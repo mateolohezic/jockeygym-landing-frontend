@@ -4,11 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import imagen1 from '../../assets/sedes/catalinas/sede_catalinas_1.webp'
-import imagen2 from '../../assets/sedes/catalinas/sede_catalinas_2.webp'
-import imagen3 from '../../assets/sedes/catalinas/sede_catalinas_3.webp'
-import imagen4 from '../../assets/sedes/catalinas/sede_catalinas_4.webp'
-import imagen5 from '../../assets/sedes/catalinas/sede_catalinas_5.webp'
+import { StaticImageData } from 'next/image';
+import hot_sale_1 from '../../assets/hot-sale/hot_sale_1.webp'
+import hot_sale_2 from '../../assets/hot-sale/hot_sale_2.webp'
+import hot_sale_3 from '../../assets/hot-sale/hot_sale_3.webp'
 
 export const SwiperFotos = () => {
     
@@ -33,42 +32,38 @@ export const SwiperFotos = () => {
         },
     }
 
+    const imagenes: Array<{img:StaticImageData}> = [
+        {
+            img: hot_sale_1
+        },
+        {
+            img: hot_sale_2
+        },
+        {
+            img: hot_sale_3
+        },
+    ]
+
     return (
         <Swiper
           breakpoints={breakpoints}
           loop={true}
-          className="w-full h-full bg-green-500"
+          className="w-full h-full"
           autoplay={{
               delay: 2000,
               disableOnInteraction: false,
           }}
           modules={[Autoplay]}
         >
-            <SwiperSlide>
-                <div className='w-full h-full relative'>
-                    <img src={imagen1.src} alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='w-full h-full relative'>
-                    <img src={imagen2.src} alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='w-full h-full relative'>
-                    <img src={imagen3.src} alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='w-full h-full relative'>
-                    <img src={imagen4.src} alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='w-full h-full relative'>
-                    <img src={imagen5.src} alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
-                </div>
-            </SwiperSlide>
+            {
+                imagenes.map(({img}, index) => (
+                    <SwiperSlide className='bg-black' key={index}>
+                        <div className='w-full h-full relative'>
+                            <img src={img.src} loading="lazy" alt='Hot Sale' className='size-full object-cover absolute top-0 left-0'/>
+                        </div>
+                    </SwiperSlide>
+                ))
+            }
         </Swiper>
       )
 }

@@ -3,3 +3,22 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 70%, rgba(0,0,0, 1) 95%);
     background-color: rgba(0, 0, 0, 0.25);
 }
+
+.portada__anual{
+    background: url('../assets/hot-sale/portada_anual.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gradient__anual{
+    mix-blend-mode: multiply;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.75) 70%, rgba(0,0,0, 1) 95%);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.gradient__sedes{
+    mix-blend-mode: multiply;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.75) 70%, rgba(0,0,0, 1) 95%);
+    background-color: rgba(0, 0, 0, 0.25);
+}
