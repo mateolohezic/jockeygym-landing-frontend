@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
 };
   
-export default function HSPage() {
+export default function HotSalePage() {
     return (
         <main className="grow w-full flex flex-col justify-center items-center">
             <section className="w-full min-h-svh flex flex-col justify-center items-center relative text-center">
