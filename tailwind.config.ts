@@ -19,6 +19,9 @@ const config: Config = {
         },
         'invalid':{
           DEFAULT: '#F45050'
+        },
+        'hotsale':{
+          DEFAULT: '#DE3429'
         }
       },
       fontFamily: {

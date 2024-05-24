@@ -67,7 +67,7 @@ export const SwiperPreguntas = () => {
             {
                 preguntas.map(({text}, index) => (
                     <SwiperSlide key={index}>
-                        <div className='w-full flex flex-col justify-start items-start text-start'>
+                        <div className='w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-start'>
                             <h5 className='w-full text-white text-xl lg:text-5xl font-gotham-black'>{text}</h5>
                         </div>
                     </SwiperSlide>
