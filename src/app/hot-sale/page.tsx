@@ -30,7 +30,7 @@ export default function HotSalePage() {
         <main className="grow w-full flex flex-col justify-center items-center">
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative text-center">
                 <div className={`absolute top-0 left-0 w-full h-full z-0 ${styles.gradient__portada}`}></div>
-                <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50 pointer-events-none select-none">
+                <video playsInline autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50 pointer-events-none select-none">
                     <source src="/assets/portada_hot_sale.mp4" type="video/mp4" />
                     Tu navegador no soporta videos.
                 </video>
