@@ -10,7 +10,7 @@ export const ContadorHotSale = () => {
     const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-06-14T21:00:00';
+        const fechaWebinar:string = '2024-05-31T23:59:59';
         const fecha:any = new Date(fechaWebinar);
         const hoy:any = new Date();
         const difference = fecha - hoy;

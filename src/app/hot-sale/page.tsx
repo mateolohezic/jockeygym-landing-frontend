@@ -30,14 +30,14 @@ export default function HotSalePage() {
         <main className="grow w-full flex flex-col justify-center items-center">
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative text-center">
                 <div className={`absolute top-0 left-0 w-full h-full z-0 ${styles.gradient__portada}`}></div>
-                <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50">
+                <video autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50 pointer-events-none select-none">
                     <source src="/assets/portada_hot_sale.mp4" type="video/mp4" />
                     Tu navegador no soporta videos.
                 </video>
                 <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative z-10" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
-                    <h1 className="mb-8 w-full text-center lg:text-start text-2xl lg:text-3xl text-hotsale lg:font-extrabold">Hot Sale JOCKEY GYM</h1>
+                    <h1 className="mb-8 w-full text-center lg:text-start text-4xl lg:text-6xl text-hotsale lg:font-extrabold">Hot Sale JOCKEY GYM</h1>
                     <SwiperPreguntas/>
-                    <Link href="/" className="mt-6 w-full px-4 lg:px-8 py-2 lg:py-4 flex justify-center items-center text-white text-2xl lg:text-4xl border-2 border-white rounded bg-hotsale hover:opacity-85 transition-all duration-300 ease-in-out">Sí, quiero cambiar mi vida!</Link>
+                    <Link href="https://b24-vu4prj.bitrix24.site/crm_form3/" className="mt-6 w-full px-4 lg:px-8 py-2 lg:py-4 flex justify-center items-center text-white text-2xl lg:text-4xl border-2 border-white rounded bg-hotsale hover:opacity-85 transition-all duration-300 ease-in-out">Sí, quiero cambiar mi vida!</Link>
                 </div>
             </section>
             <section className="w-full lg:min-h-screen flex flex-col lg:flex-row justify-between items-stretch bg-black">
@@ -58,12 +58,12 @@ export default function HotSalePage() {
                         <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>12 sesiones de sauna.</span></li>
                         <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Reto de 6 semanas.</span></li>
                         <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Emails semanales.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Plataforma de entrenamiento exclusiva "TRAININGGYM".</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Grupo de Telegram exclusiva "JG VIP".</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Plataforma de entrenamiento exclusiva &ldquo;TRAININGGYM&rdquo;.</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Grupo de Telegram exclusiva &ldquo;JG VIP&rdquo;.</span></li>
                         <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Extensión hasta 45 días por vacaciones.</span></li>
                     </ul>
                     <div className="mt-8 w-full flex justify-center text-center">
-                        <Link href={'/'} className="w-full bg-hotsale text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-300 ease-in-out">Estoy listo para empezar</Link>
+                        <Link href={'https://b24-vu4prj.bitrix24.site/crm_form3/'} className="w-full bg-hotsale text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-300 ease-in-out">Estoy listo para empezar</Link>
                     </div>
                 </div>
                 <div className="lg:grow relative">
@@ -76,8 +76,8 @@ export default function HotSalePage() {
             <section className={`w-full flex justify-center items-center min-h-lvh relative px-4 xl:px-0 ${styles.portada__anual}`}>
                 <div className={`absolute top-0 left-0 w-full h-full z-0 ${styles.gradient__anual}`}></div>
                 <div className="w-full max-w-7xl my-24 p-6 flex flex-col justify-center items-center bg-white shadow-lg rounded relative z-10">
-                    <p className="w-full text-center text-xs lg:text-lg font-gotham">Si queres ir más allá y progresar en <b className="text-hotsale font-gotham-black">tiempo record</b> sin margen de error</p>
-                    <div className="mt-8 lg:mt-0 w-fit relative font-gotham">
+                    <p className="w-full text-center text-base lg:text-lg font-gotham">Si queres ir más allá y progresar en <b className="text-hotsale font-gotham-black">tiempo record</b> sin margen de error</p>
+                    <div className="mt-5 lg:mt-0 w-fit relative font-gotham">
                         <h2 className="w-fit text-center text-xl lg:text-6xl font-gotham-black drop-shadow-sm relative">
                             JOCKEY GYM ANUAL PLUS
                             <span className="absolute top-0 left-0 text-xs bg-hotsale text-white py-1 lg:py-1.5 px-2 lg:px-3 rounded-3xl leading-none -translate-x-1/2 -translate-y-1/2 -rotate-[20grad]">NUEVO!</span>
@@ -90,13 +90,13 @@ export default function HotSalePage() {
                         <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale hidden lg:block lg:text-2xl lg:mr-1'/><span className='w-full'>Guía nutricional hecha por nuestra nutricionista, para que aprendas a calcular tus requerimientos y <b className="text-hotsale">comer de acuerdo a lo que necesitas.</b></span></li>
                         <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg lg:text-2xl mr-0 lg:mr-1'/><span className='w-full'><b className="text-hotsale font-gotham-black">Resultados 100% garantizados en tiempo record.</b></span></li>
                     </ul>
-                    <Link href={'/'} className="mt-8 w-full bg-hotsale rounded py-2 lg:py-4 px-4 lg:px-8 text-center text-2xl lg:text-4xl text-white hover:drop-shadow-md hover:opacity-85 transition-all duration-300 ease-in-out">Esto es justo lo que necesito</Link>
+                    <Link href={'https://b24-vu4prj.bitrix24.site/crm_form3/'} className="mt-8 w-full bg-hotsale rounded py-2 lg:py-4 px-4 lg:px-8 text-center text-2xl lg:text-4xl text-white hover:drop-shadow-md hover:opacity-85 transition-all duration-300 ease-in-out">Esto es justo lo que necesito</Link>
                 </div>
             </section>
             <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center my-24">
                 <h2 className="w-full text-4xl lg:text-5xl text-center">JOCKEY GYM HOT SALE</h2>
                 <div className="mt-12 w-full flex justify-center items-center flex-wrap lg:flex-nowrap gap-12 lg:gap-8">
-                    <div className="w-full flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
+                    <div className="w-full max-w-sm flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
                         <div className="bg-hotsale text-white font-gotham-black py-2 px-4 rounded-3xl absolute top-0 -translate-y-1/2">MÁS BARATO</div>
                         <h3 className="mt-2 w-full text-center text-5xl border-b-2 border-neutral-100 pb-1 mb-2">ANUAL VIP</h3>
                         <ul className='mt-4 lg:mt-2 w-full text-center lg:text-start text-base lg:text-base font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-4 lg:gap-3'>
@@ -110,11 +110,11 @@ export default function HotSalePage() {
                             <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale hidden lg:block text-xl mr-1'/><span className='w-full lg:w-5/6'>Extensión hasta <b className="font-gotham-black text-neutral-800">45 días</b></span></li>
                         </ul>
                         <div className="mt-4 w-full flex flex-col justify-center items-center">
-                            <p className="text-neutral-500 font-gotham font-light text-xl line-through decoration-neutral-400">$500</p>
+                            <p className="text-neutral-500 font-gotham font-light text-xl line-through decoration-neutral-400">$669.500</p>
                             <p className="text-hotsale font-gotham-black text-5xl">$299.900</p>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
+                    <div className="w-full max-w-sm flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
                         <div className="bg-hotsale text-white font-gotham-black py-2 px-4 rounded-3xl absolute top-0 -translate-y-1/2">MEJOR OPCIÓN</div>
                         <h3 className="mt-2 w-full text-center text-5xl border-b-2 border-neutral-100 pb-1 mb-2">ANUAL PLUS</h3>
                         <ul className='mt-4 lg:mt-2 w-full text-center lg:text-start text-base lg:text-base font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-4 lg:gap-3'>
@@ -132,11 +132,11 @@ export default function HotSalePage() {
                             <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale hidden lg:block text-xl mr-1'/><span className='w-full lg:w-5/6'>Entrenamiento <b className="font-gotham-black text-hotsale lg:text-neutral-800">personalizado en equipo</b> (cupos de hasta 3 personas)</span></li>
                         </ul>
                         <div className="mt-4 w-full flex flex-col justify-center items-center">
-                            <p className="text-neutral-500 font-gotham font-light text-xl line-through decoration-neutral-400">$500</p>
+                            <p className="text-hotsale font-gotham-black text-sm text-center">OPORTUNIDAD ÚNICA POR HOT SALE</p>
                             <p className="text-hotsale font-gotham-black text-5xl">$600.000</p>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
+                    <div className="w-full max-w-sm flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
                         <div className="bg-hotsale text-white font-gotham-black py-2 px-4 rounded-3xl absolute top-0 -translate-y-1/2">VIP</div>
                         <h3 className="mt-2 w-full text-center text-5xl border-b-2 border-neutral-100 pb-1 mb-2">ANUAL ELITE</h3>
                         <ul className='mt-4 lg:mt-2 w-full text-center lg:text-start text-base lg:text-base font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-4 lg:gap-3'>
@@ -154,7 +154,7 @@ export default function HotSalePage() {
                             <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale hidden lg:block text-xl mr-1'/><span className='w-full lg:w-5/6'>Entrenamiento <b className="font-gotham-black text-hotsale lg:text-neutral-800">personalizado 1 a 1</b></span></li>
                         </ul>
                         <div className="mt-4 w-full flex flex-col justify-center items-center">
-                            <p className="text-neutral-500 font-gotham font-light text-xl line-through decoration-neutral-400">$500</p>
+                            <p className="text-hotsale font-gotham-black text-sm text-center">OPORTUNIDAD ÚNICA POR HOT SALE</p>
                             <p className="text-hotsale font-gotham-black text-5xl">$990.000</p>
                         </div>
                     </div>
@@ -164,7 +164,7 @@ export default function HotSalePage() {
                 <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center text-center">
                     <h2 className="text-5xl lg:text-7xl text-white">APROVECHA AHORA</h2>
                     <p className="mt-4 lg:mt-2 text-base lg:text-xl text-white font-gotham">No te quedes sin ser parte de la <b className="font-gotham-black text-hotsale">comunidad fitness más grande del NOA</b>, ¡por un precio unico por tiempo limitado!</p>
-                    <Link href={''} className="mt-8 bg-hotsale w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-200 ease-in-out">QUIERO SER PARTE</Link>
+                    <Link href={'https://b24-vu4prj.bitrix24.site/crm_form3/'} className="mt-8 bg-hotsale w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-200 ease-in-out">QUIERO SER PARTE</Link>
                 </div>
             </section>
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative">
@@ -172,7 +172,7 @@ export default function HotSalePage() {
                 <div className="absolute top-0 left-0 size-full z-0">
                     <SwiperSedes/>
                 </div>
-                <div className="w-full max-w-7xl min-h-lvh pt-24 pb-4 lg:pb-24 px-4 xl:px-0 flex flex-col justify-center items-center relative z-20">
+                <div className="w-full max-w-7xl min-h-lvh py-24 px-4 xl:px-0 flex flex-col justify-center items-center relative z-20">
                     <div className="w-full grow flex flex-col justify-center items-center">
                         <h2 className="flex flex-col justify-center items-center">
                             <span className="text-5xl lg:text-7xl text-white"> OFERTA EXCLUSIVA </span>
@@ -182,18 +182,18 @@ export default function HotSalePage() {
                             <ContadorHotSale />
                         </div>
                     </div>
-                    <div className="w-full mt-8 lg:mt-0 flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-end gap-4 font-gotham">
-                        <div className="flex flex-col justify-start items-start">
-                            <span className="text-2xl lg:text-4xl text-white font-gotham-black">+30</span>
-                            <span className="text-lg lg:text-2xl text-white opacity-90">años de experiencia</span>
+                    <div className="w-full mt-8 lg:mt-0 flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-end gap-8 font-gotham">
+                        <div className="w-full lg:w-auto flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                            <span className="text-4xl text-white font-gotham-black">+30</span>
+                            <span className="text-2xl text-white opacity-90">años de experiencia</span>
                         </div>
-                        <div className="flex flex-col justify-start items-start">
-                            <span className="text-2xl lg:text-4xl text-white font-gotham-black">6</span>
-                            <span className="text-lg lg:text-2xl text-white opacity-90">sedes en la provincia</span>
+                        <div className="w-full lg:w-auto flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                            <span className="text-4xl text-white font-gotham-black">6</span>
+                            <span className="text-2xl text-white opacity-90">sedes en la provincia</span>
                         </div>
-                        <div className="flex flex-col justify-start items-start">
-                            <span className="text-2xl lg:text-4xl text-white font-gotham-black">+12000</span>
-                            <span className="text-lg lg:text-2xl text-white opacity-90">socios confian en nosotros</span>
+                        <div className="w-full lg:w-auto flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                            <span className="text-4xl text-white font-gotham-black">+12000</span>
+                            <span className="text-2xl text-white opacity-90">socios confian en nosotros</span>
                         </div>
                     </div>
                 </div>
