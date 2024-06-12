@@ -111,7 +111,7 @@ export default function HotSalePage() {
                         </ul>
                         <div className="mt-4 w-full flex flex-col justify-center items-center">
                             <p className="text-neutral-500 font-gotham font-light text-xl line-through decoration-neutral-400">$669.500</p>
-                            <p className="text-hotsale font-gotham-black text-5xl">$299.900</p>
+                            <p className="text-hotsale font-gotham-black text-5xl">$329.900</p>
                         </div>
                     </div>
                     <div className="w-full max-w-sm flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">
@@ -133,7 +133,7 @@ export default function HotSalePage() {
                         </ul>
                         <div className="mt-4 w-full flex flex-col justify-center items-center">
                             <p className="text-hotsale font-gotham-black text-sm text-center">OPORTUNIDAD ÚNICA POR HOT SALE</p>
-                            <p className="text-hotsale font-gotham-black text-5xl">$600.000</p>
+                            <p className="text-hotsale font-gotham-black text-5xl">$669.000</p>
                         </div>
                     </div>
                     <div className="w-full max-w-sm flex flex-col justify-center items-center py-8 px-6 bg-white shadow-md border-2 border-neutral-200 rounded-3xl relative">

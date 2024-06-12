@@ -12,6 +12,7 @@ export { Footer } from './footer/Footer';
 export { TawkTo } from './chatbot/TawkTo';
 
 export { InscripcionWebinar } from './forms/InscripcionWebinar';
+export { BitrixSeguimiento } from './forms/BitrixSeguimiento';
 
 export { HeaderWebinar } from './webinar/HeaderWebinar';
 export { ContadorWebinar } from './webinar/ContadorWebinar';
@@ -21,3 +22,6 @@ export { SwiperPreguntas } from './hot-sale/SwiperPreguntas'
 export { SwiperFotos } from './hot-sale/SwiperFotos'
 export { SwiperSedes } from './hot-sale/SwiperSedes'
 export { ContadorHotSale } from './hot-sale/ContadorHotSale'
+
+export { PixelFacebook } from './seo/PixelFacebook'
+export { TrackingBitrix } from './seo/TrackingBitrix'
