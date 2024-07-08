@@ -39,7 +39,7 @@ export const InscripcionWebinar = () => {
                 // entities: [],
                 // security_sign: undefined,
                 // trace: {
-                //     url:"https://b24-vu4prj.bitrix24.site/crm_form3/",
+                //     url:"https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/",
                 //     ref:"https://jockey-gym.bitrix24.es/",
                 //     device:{
                 //         isMobile:true
@@ -52,7 +52,7 @@ export const InscripcionWebinar = () => {
                 //     client:{},
                 //     pages:{
                 //         list:[
-                //             ["https://b24-vu4prj.bitrix24.site/crm_form3/",
+                //             ["https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/",
                 //             1715007256,
                 //             "Formulario de Landing"]
                 //         ]

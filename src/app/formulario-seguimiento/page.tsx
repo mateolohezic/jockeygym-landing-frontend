@@ -2,14 +2,14 @@ import { BitrixSeguimiento } from "@/components";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Formulario de seguimiento',
+    title: 'Formulario',
     description: "Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.",
-    keywords: ['Formulario de seguimiento', 'gimnasio', 'Jockey GYM', 'jockey', 'tucuman', 'mejor', 'gym', 'ejercicio', 'salud'],
+    keywords: ['Formulario', 'gimnasio', 'Jockey GYM', 'jockey', 'tucuman', 'mejor', 'gym', 'ejercicio', 'salud'],
     openGraph: {
-        title: 'Formulario de seguimiento - Jockey GYM',
+        title: 'Formulario - Jockey GYM',
         description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
         url: 'https://jockeygym.com.ar/formulario-seguimiento',
-        siteName: 'Formulario de seguimiento - Jockey GYM',
+        siteName: 'Formulario - Jockey GYM',
         locale: 'es_AR',
         type: 'website',
     },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         site: 'https://jockeygym.com.ar/formulario-seguimiento',
         creator: 'Jockey GYM',
-        title: 'Formulario de seguimiento - Jockey GYM',
+        title: 'Formulario - Jockey GYM',
         description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
     },
 };

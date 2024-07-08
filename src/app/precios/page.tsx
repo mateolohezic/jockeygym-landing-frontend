@@ -36,23 +36,23 @@ export default function PreciosPage() {
         // },
         {
           name: 'Mensual',
-          value: '36.900'
+          value: '41.900'
         },
         {
           name: 'Trimestre Multisede',
-          value: '94.900'
+          value: '107.900'
         },
         {
           name: 'Semestre Premium',
-          value: '174.900',
+          value: '199.900',
           important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900'
+          value: '339.900'
         },
       ],
-      href:'https://b24-vu4prj.bitrix24.site/crm_form3/'
+      href:'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'
     },
     {
       title:'el solar',
@@ -63,23 +63,23 @@ export default function PreciosPage() {
         // },
         {
           name: 'Mensual',
-          value: '36.900'
+          value: '41.900'
         },
         {
           name: 'Trimestre Multisede',
-          value: '94.900'
+          value: '107.900'
         },
         {
           name: 'Semestre Premium',
-          value: '174.900',
+          value: '199.900',
           important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900'
+          value: '339.900'
         },
       ],
-      href:'https://b24-vu4prj.bitrix24.site/crm_form3/'
+      href:'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'
     },
     {
       title:'av. perón',
@@ -90,23 +90,23 @@ export default function PreciosPage() {
         // },
         {
           name: 'Mensual',
-          value: '36.900'
+          value: '41.900'
         },
         {
           name: 'Trimestre Multisede',
-          value: '94.900'
+          value: '107.900'
         },
         {
           name: 'Semestre Premium',
-          value: '174.900',
+          value: '199.900',
           important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900'
+          value: '339.900'
         },
       ],
-      href:'https://b24-vu4prj.bitrix24.site/crm_form3/'
+      href:'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'
     },
     {
       title:'centro',
@@ -117,27 +117,27 @@ export default function PreciosPage() {
         // },
         {
           name: 'Mensual',
-          value: '32.900'
+          value: '37.900'
         },
         // {
         //   name: 'Matricula Trimestral',
         //   value: '9.900'
         // },
         {
-          name: 'Trimestre',
-          value: '84.900'
+          name: 'Trimestral Multisede',
+          value: '107.900'
         },
         {
           name: 'Semestre Premium',
-          value: '174.900',
+          value: '199.900',
           important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900'
+          value: '339.900'
         },
       ],
-      href:'https://b24-vu4prj.bitrix24.site/crm_form3/'
+      href:'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'
     },
     {
       title:'catalinas',
@@ -148,7 +148,7 @@ export default function PreciosPage() {
         // },
         {
           name: 'Mensual',
-          value: '32.900'
+          value: '37.900'
         },
         // {
         //   name: 'Matricula Trimestral',
@@ -156,19 +156,19 @@ export default function PreciosPage() {
         // },
         {
           name: 'Trimestre',
-          value: '84.900'
+          value: '107.900'
         },
         {
           name: 'Semestre Premium',
-          value: '174.900',
+          value: '199.900',
           important: true
         },
         {
           name: 'Anual VIP Renovados',
-          value: '294.900'
+          value: '339.900'
         },
       ],
-      href:'https://b24-vu4prj.bitrix24.site/crm_form3/'
+      href:'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'
     },
   ]
 
@@ -180,7 +180,7 @@ export default function PreciosPage() {
         <div className="w-full xl:max-w-7xl px-4 xl:px-0 flex flex-col items-start justify-start relative text-start" data-aos="fade-right" data-aos-duration="300" data-aos-easing="ease-in-out">
           <h1 className="text-4xl lg:text-3xl text-jockey lg:font-extrabold">JOCKEY GYM</h1>
           <h2 className="text-5xl lg:text-7xl lg:font-extrabold"><span className="block text-white">EL MEJOR GIMNASIO DE TUCUMÁN Y VOS,</span><span className="block text-white">JUNTOS POR TUS OBJETIVOS.</span></h2>
-          <Link href="https://b24-vu4prj.bitrix24.site/crm_form3/" className="mt-5 lg:mt-8 flex justify-center items-center text-white text-2xl border-2 px-8 py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
+          <Link href="https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/" className="mt-5 lg:mt-8 flex justify-center items-center text-white text-2xl border-2 px-8 py-4 rounded-lg  hover:bg-[#FFFFFF50] transition-all duration-300 ease-in-out">Empeza a entrenar</Link>
         </div>
       </section>
       <section className="w-full min-h-svh flex flex-col justify-start items-center relative py-24 px-6">
