@@ -10,7 +10,7 @@ export const ContadorHotSale = () => {
     const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-06-06T23:59:59';
+        const fechaWebinar:string = '2024-07-13T23:59:59';
         const fecha:any = new Date(fechaWebinar);
         const hoy:any = new Date();
         const difference = fecha - hoy;
@@ -45,19 +45,19 @@ export const ContadorHotSale = () => {
         days &&
         <section className="w-full flex justify-center items-end gap-6 sm:gap-8 lg:gap-20">
             <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-hotsale">{days}</span>
+                <span className="text-6xl lg:text-8xl text-jockey">{days}</span>
                 <span className="text-xs lg:text-base font-gotham text-white">Días</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-hotsale">{hours}</span>
+                <span className="text-6xl lg:text-8xl text-jockey">{hours}</span>
                 <span className="text-xs lg:text-base font-gotham text-white">Horas</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-hotsale">{minutes}</span>
+                <span className="text-6xl lg:text-8xl text-jockey">{minutes}</span>
                 <span className="text-xs lg:text-base font-gotham text-white">Minutos</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-hotsale">{seconds}</span>
+                <span className="text-6xl lg:text-8xl text-jockey">{seconds}</span>
                 <span className="text-xs lg:text-base font-gotham text-white">Segundos</span>
             </div>
         </section>

@@ -14,8 +14,8 @@ export const Navbar = () => {
             href: '/precios'
         },
         {
-            title: 'Hot Sale',
-            href: '/hot-sale'
+            title: 'Independencia',
+            href: '/dia-de-la-independencia'
         },
         // {
         //     title: 'Personal Training',
