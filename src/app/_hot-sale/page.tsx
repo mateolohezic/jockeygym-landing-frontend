@@ -37,7 +37,7 @@ export default function HotSalePage() {
                 <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col items-center justify-center relative z-10" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-out">
                     <h1 className="mb-8 w-full text-center lg:text-start text-4xl lg:text-6xl text-hotsale lg:font-extrabold">Hot Sale JOCKEY GYM</h1>
                     <SwiperPreguntas/>
-                    <Link href="https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/" className="mt-6 w-full px-4 lg:px-8 py-2 lg:py-4 flex justify-center items-center text-white text-2xl lg:text-4xl border-2 border-white rounded bg-hotsale hover:opacity-85 transition-all duration-300 ease-in-out">Sí, quiero cambiar mi vida!</Link>
+                    <Link href="https://jockeygymtuc.bitrix24.site/crm_form3/" className="mt-6 w-full px-4 lg:px-8 py-2 lg:py-4 flex justify-center items-center text-white text-2xl lg:text-4xl border-2 border-white rounded bg-hotsale hover:opacity-85 transition-all duration-300 ease-in-out">Sí, quiero cambiar mi vida!</Link>
                 </div>
             </section>
             <section className="w-full lg:min-h-screen flex flex-col lg:flex-row justify-between items-stretch bg-black">
@@ -63,7 +63,7 @@ export default function HotSalePage() {
                         <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Extensión hasta 45 días por vacaciones.</span></li>
                     </ul>
                     <div className="mt-8 w-full flex justify-center text-center">
-                        <Link href={'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'} className="w-full bg-hotsale text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-300 ease-in-out">Estoy listo para empezar</Link>
+                        <Link href={'https://jockeygymtuc.bitrix24.site/crm_form3/'} className="w-full bg-hotsale text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-300 ease-in-out">Estoy listo para empezar</Link>
                     </div>
                 </div>
                 <div className="lg:grow relative">
@@ -90,7 +90,7 @@ export default function HotSalePage() {
                         <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale hidden lg:block lg:text-2xl lg:mr-1'/><span className='w-full'>Guía nutricional hecha por nuestra nutricionista, para que aprendas a calcular tus requerimientos y <b className="text-hotsale">comer de acuerdo a lo que necesitas.</b></span></li>
                         <li className='w-full flex flex-col lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-hotsale text-lg lg:text-2xl mr-0 lg:mr-1'/><span className='w-full'><b className="text-hotsale font-gotham-black">Resultados 100% garantizados en tiempo record.</b></span></li>
                     </ul>
-                    <Link href={'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'} className="mt-8 w-full bg-hotsale rounded py-2 lg:py-4 px-4 lg:px-8 text-center text-2xl lg:text-4xl text-white hover:drop-shadow-md hover:opacity-85 transition-all duration-300 ease-in-out">Esto es justo lo que necesito</Link>
+                    <Link href={'https://jockeygymtuc.bitrix24.site/crm_form3/'} className="mt-8 w-full bg-hotsale rounded py-2 lg:py-4 px-4 lg:px-8 text-center text-2xl lg:text-4xl text-white hover:drop-shadow-md hover:opacity-85 transition-all duration-300 ease-in-out">Esto es justo lo que necesito</Link>
                 </div>
             </section>
             <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center my-24">
@@ -164,7 +164,7 @@ export default function HotSalePage() {
                 <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center text-center">
                     <h2 className="text-5xl lg:text-7xl text-white">APROVECHA AHORA</h2>
                     <p className="mt-4 lg:mt-2 text-base lg:text-xl text-white font-gotham">No te quedes sin ser parte de la <b className="font-gotham-black text-hotsale">comunidad fitness más grande del NOA</b>, ¡por un precio unico por tiempo limitado!</p>
-                    <Link href={'https://jockeygymtuc.bitrix24.site/crm_form_dcuvx/'} className="mt-8 bg-hotsale w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-200 ease-in-out">QUIERO SER PARTE</Link>
+                    <Link href={'https://jockeygymtuc.bitrix24.site/crm_form3/'} className="mt-8 bg-hotsale w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded hover:opacity-85 transition-all duration-200 ease-in-out">QUIERO SER PARTE</Link>
                 </div>
             </section>
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative">

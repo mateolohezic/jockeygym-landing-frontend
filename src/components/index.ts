@@ -23,5 +23,8 @@ export { SwiperFotos } from './hot-sale/SwiperFotos'
 export { SwiperSedes } from './hot-sale/SwiperSedes'
 export { ContadorHotSale } from './hot-sale/ContadorHotSale'
 
+export { SwiperPublicidad } from './televisores/SwiperPublicidad'
+export { SwiperPartido } from './televisores/SwiperPartido'
+
 export { PixelFacebook } from './seo/PixelFacebook'
 export { TrackingBitrix } from './seo/TrackingBitrix'

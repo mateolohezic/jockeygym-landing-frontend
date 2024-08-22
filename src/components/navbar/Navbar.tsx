@@ -13,10 +13,10 @@ export const Navbar = () => {
             title: 'Precios',
             href: '/precios'
         },
-        {
-            title: 'Independencia',
-            href: '/dia-de-la-independencia'
-        },
+        // {
+        //     title: 'Independencia',
+        //     href: '/dia-de-la-independencia'
+        // },
         // {
         //     title: 'Personal Training',
         //     href: '/personal-training'

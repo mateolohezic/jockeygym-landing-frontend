@@ -45,12 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: 'https://jockeygym.com.ar/hot-sale',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
       url: 'https://jockeygym.com.ar/enlaces',
       lastModified: new Date(),
       changeFrequency: 'weekly',
