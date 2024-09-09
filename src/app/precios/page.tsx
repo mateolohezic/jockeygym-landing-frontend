@@ -30,26 +30,22 @@ export default function PreciosPage() {
     {
       title:'distrito',
       properties: [
-        // {
-        //   name: 'Matricula',
-        //   value: '18.900'
-        // },
         {
           name: 'Mensual',
-          value: '41.900'
+          value: '47.900'
         },
         {
-          name: 'Trimestre Multisede',
-          value: '107.900'
+          name: 'Trimestral Multisede',
+          value: '123.900'
         },
         {
           name: 'Semestre Premium',
-          value: '199.900',
+          value: '229.900',
           important: true
         },
         {
-          name: 'Anual VIP Renovados',
-          value: '339.900'
+          name: 'Anual VIP',
+          value: '389.900'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -57,26 +53,22 @@ export default function PreciosPage() {
     {
       title:'el solar',
       properties: [
-        // {
-        //   name: 'Matricula',
-        //   value: '18.900'
-        // },
         {
           name: 'Mensual',
-          value: '41.900'
+          value: '47.900'
         },
         {
-          name: 'Trimestre Multisede',
-          value: '107.900'
+          name: 'Trimestral Multisede',
+          value: '123.900'
         },
         {
           name: 'Semestre Premium',
-          value: '199.900',
+          value: '229.900',
           important: true
         },
         {
-          name: 'Anual VIP Renovados',
-          value: '339.900'
+          name: 'Anual VIP',
+          value: '389.900'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -84,26 +76,22 @@ export default function PreciosPage() {
     {
       title:'av. perón',
       properties: [
-        // {
-        //   name: 'Matricula',
-        //   value: '18.900'
-        // },
         {
           name: 'Mensual',
-          value: '41.900'
+          value: '47.900'
         },
         {
-          name: 'Trimestre Multisede',
-          value: '107.900'
+          name: 'Trimestral Multisede',
+          value: '123.900'
         },
         {
           name: 'Semestre Premium',
-          value: '199.900',
+          value: '229.900',
           important: true
         },
         {
-          name: 'Anual VIP Renovados',
-          value: '339.900'
+          name: 'Anual VIP',
+          value: '389.900'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -111,30 +99,22 @@ export default function PreciosPage() {
     {
       title:'centro',
       properties: [
-        // {
-        //   name: 'Matricula',
-        //   value: '18.900'
-        // },
         {
           name: 'Mensual',
-          value: '41.900'
+          value: '47.900'
         },
-        // {
-        //   name: 'Matricula Trimestral',
-        //   value: '9.900'
-        // },
         {
           name: 'Trimestral Multisede',
-          value: '107.900'
+          value: '123.900'
         },
         {
           name: 'Semestre Premium',
-          value: '199.900',
+          value: '229.900',
           important: true
         },
         {
-          name: 'Anual VIP Renovados',
-          value: '339.900'
+          name: 'Anual VIP',
+          value: '389.900'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -142,30 +122,22 @@ export default function PreciosPage() {
     {
       title:'catalinas',
       properties: [
-        // {
-        //   name: 'Matricula',
-        //   value: '18.900'
-        // },
         {
           name: 'Mensual',
-          value: '37.900'
+          value: '41.900'
         },
-        // {
-        //   name: 'Matricula Trimestral',
-        //   value: '9.900'
-        // },
         {
           name: 'Trimestre',
-          value: '107.900'
+          value: '123.900'
         },
         {
           name: 'Semestre Premium',
-          value: '199.900',
+          value: '229.900',
           important: true
         },
         {
-          name: 'Anual VIP Renovados',
-          value: '339.900'
+          name: 'Anual VIP',
+          value: '389.900'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -200,7 +172,17 @@ export default function PreciosPage() {
                       properties.map( ({ name, value, important }) => (
                         <tbody key={name}>
                           <tr className='border-b border-jockey h-12'>
-                            <td className={` ${important && 'text-jockey font-gotham-black'}`}>{name}</td>
+                            {
+                              name === 'Anual VIP' ?
+                              <td>
+                                <div className="flex flex-col">
+                                  <span className="leading-tight">{name}</span>
+                                  <span className="text-xs text-jockey font-gotham-black leading-none">(Solo clientes)</span>
+                                </div>
+                              </td>
+                              :
+                              <td className={` ${important && 'text-jockey font-gotham-black'}`}>{name}</td>
+                            }
                             <td className={`text-end w-24 ${important && 'text-jockey font-gotham-black'}`}>
                               <div className="w-full flex justify-between items-center">
                                 <span className={`${important && 'text-jockey font-gotham-black'}`}>$</span>

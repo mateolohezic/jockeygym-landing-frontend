@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function EnlacesPage() {
     return (
         <main className="grow w-full">
-            <section className="w-full min-h-lvh flex flex-col justify-center items-center bg-gradient-to-b from-jockey from-25% to-white to-[125%] relative">
+            <section className="w-full min-h-svh flex flex-col justify-center items-center bg-gradient-to-b from-jockey from-25% to-white to-[125%] relative">
                 <img src={logo.src} alt='Jockey GYM Logo' className="w-5/6 lg:w-auto lg:h-full object-contain absolute left-0 right-0 mx-auto opacity-15"/>
                 <h1 className="sr-only">Enlaces relevantes Jockey GYM</h1>
                 <h2 className="text-5xl lg:text-5xl text-white">Jockey GYM</h2>
@@ -36,6 +36,7 @@ export default function EnlacesPage() {
                     <Link href='/precios' className="block text-lg lg:text-xl text-jockey w-full py-4 px-4 bg-white rounded-3xl hover:scale-105 drop-shadow-md transition-all duration-300 ease-in-out">Ver precios</Link>
                     {/* <Link href='/dia-de-la-independencia' className="block text-lg lg:text-xl text-jockey w-full py-4 px-4 bg-white rounded-3xl hover:scale-105 drop-shadow-md transition-all duration-300 ease-in-out">Día de la independencia</Link> */}
                     <Link href='https://b24-vu4prj.bitrix24.site/crm_form_dcuvx/' className="block text-lg lg:text-xl text-jockey w-full py-4 px-4 bg-white rounded-3xl hover:scale-105 drop-shadow-md transition-all duration-300 ease-in-out">Llamada gratuita con un experto</Link>
+                    {/* <Link href='https://b24-gean63.bitrix24.site/crm_form_89yfw/?utm_source=reclutamientoAgostoVentas' className="block text-lg lg:text-xl text-jockey w-full py-4 px-4 bg-white rounded-3xl hover:scale-105 drop-shadow-md transition-all duration-300 ease-in-out"><span className="block text-jockey">Trabaja con nosotros:</span> Vendedora/recepcionista</Link> */}
                     {/* <Link href='/webinar/inscripcion' className="block text-lg lg:text-xl text-jockey w-full py-4 px-4 bg-white rounded-3xl hover:scale-105 drop-shadow-md transition-all duration-300 ease-in-out">Webinar gratuito:<span className="block text-jockey">3 claves para desbloquear tu potencial</span></Link> */}
                 </div>
                 <div className="mt-6 lg:mt-8 w-full flex justify-center items-center gap-4 relative z-30">
