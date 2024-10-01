@@ -177,7 +177,7 @@ export default function PreciosPage() {
                               <td>
                                 <div className="flex flex-col">
                                   <span className="leading-tight">{name}</span>
-                                  <span className="text-xs text-jockey font-gotham-black leading-none">(Solo clientes)</span>
+                                  <span className="text-xs text-invalid font-gotham-black leading-none uppercase tracking-widest">(Solo clientes)</span>
                                 </div>
                               </td>
                               :

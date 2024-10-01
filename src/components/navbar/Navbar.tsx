@@ -13,10 +13,10 @@ export const Navbar = () => {
             title: 'Precios',
             href: '/precios'
         },
-        // {
-        //     title: 'Independencia',
-        //     href: '/dia-de-la-independencia'
-        // },
+        {
+            title: 'Desafio de verano',
+            href: '/desafio-de-verano'
+        },
         // {
         //     title: 'Personal Training',
         //     href: '/personal-training'
@@ -51,14 +51,14 @@ export const Navbar = () => {
             <div className="w-full xl:max-w-7xl flex justify-between items-center py-8 px-4 xl:px-0">
                 <div className='grow flex justify-start items-center'>
                     <Link href="/">
-                        <Logo className='h-12' pathClassName='fill-white'/>
+                        <Logo className='h-8 lg:h-12' pathClassName='fill-white'/>
                     </Link>
                 </div>
-                <ul className='flex justify-end items-center gap-4 lg:gap-8'>
+                <ul className='flex justify-end items-center gap-3 lg:gap-8'>
                     {
                         links.map( link => (
                             <li key={link.href}>
-                                <Link href={link.href} className='text-white text-lg lg:text-3xl'>
+                                <Link href={link.href} className='text-white text-base lg:text-3xl whitespace-nowrap'>
                                     {link.title}
                                 </Link>
                             </li>
@@ -66,7 +66,7 @@ export const Navbar = () => {
                     }
                     <li>
                     <DropdownMenu>
-                        <DropdownMenuTrigger className='text-white text-lg lg:text-3xl'>SEDES</DropdownMenuTrigger>
+                        <DropdownMenuTrigger className='text-white text-base lg:text-3xl whitespace-nowrap'>SEDES</DropdownMenuTrigger>
                         <DropdownMenuContent>
                             {
                                 dropdownLinks.map( link => (

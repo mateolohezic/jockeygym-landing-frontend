@@ -14,17 +14,22 @@ export { TawkTo } from './chatbot/TawkTo';
 export { InscripcionWebinar } from './forms/InscripcionWebinar';
 export { BitrixSeguimiento } from './forms/BitrixSeguimiento';
 
+export { HeaderDesafio } from './desafio/HeaderDesafio';
+
 export { HeaderWebinar } from './webinar/HeaderWebinar';
 export { ContadorWebinar } from './webinar/ContadorWebinar';
 export { AgendarCalendario } from './webinar/AgendarCalendario';
 
-export { SwiperPreguntas } from './hot-sale/SwiperPreguntas'
-export { SwiperFotos } from './hot-sale/SwiperFotos'
-export { SwiperSedes } from './hot-sale/SwiperSedes'
-export { ContadorHotSale } from './hot-sale/ContadorHotSale'
+export { SwiperPreguntas } from './hot-sale/SwiperPreguntas';
+export { SwiperFotos } from './hot-sale/SwiperFotos';
+export { SwiperSedes } from './hot-sale/SwiperSedes';
+export { ContadorHotSale } from './hot-sale/ContadorHotSale';
 
-export { SwiperPublicidad } from './televisores/SwiperPublicidad'
-export { SwiperPartido } from './televisores/SwiperPartido'
+export { SwiperPublicidad } from './televisores/SwiperPublicidad';
+export { SwiperPartido } from './televisores/SwiperPartido';
 
-export { PixelFacebook } from './seo/PixelFacebook'
-export { TrackingBitrix } from './seo/TrackingBitrix'
+export { PixelFacebook } from './seo/PixelFacebook';
+export { TrackingBitrix } from './seo/TrackingBitrix';
+
+export { ContadorEvento } from './ContadorEvento';
+export { IframeFormButton } from './IframeFormButton';
