@@ -1,28 +1,31 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import styles from '../../styles/landing-hs.module.css'
 import { ContadorEvento, IframeFormButton } from "@/components";
 import { FaCircleCheck, FaPlus } from "react-icons/fa6";
 import portada from '../../assets/desafio/desafio_verano_portada.webp'
+import portada2 from '../../assets/desafio/portada_desafio.webp'
 import foto from '../../assets/desafio/desafio_verano.webp'
+import caracteristica1 from '../../assets/desafio/caracteristica1.webp'
+import caracteristica2 from '../../assets/desafio/caracteristica2.webp'
+import caracteristica3 from '../../assets/desafio/caracteristica3.webp'
 
 export const metadata: Metadata = {
-    title: 'Desafio de Verano',
+    title: 'Desafio Verano',
     description: "Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.",
-    keywords: ['Desafio de Verano', 'gimnasio', 'Jockey GYM', 'jockey', 'tucuman', 'mejor', 'gym', 'ejercicio', 'salud'],
+    keywords: ['Desafio Verano', 'gimnasio', 'Jockey GYM', 'jockey', 'tucuman', 'mejor', 'gym', 'ejercicio', 'salud'],
     openGraph: {
-        title: 'Desafio de Verano - Jockey GYM',
+        title: 'Desafio Verano - Jockey GYM',
         description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
-        url: 'https://jockeygym.com.ar/desafio-de-verano',
-        siteName: 'Desafio de Verano - Jockey GYM',
+        url: 'https://jockeygym.com.ar/desafio-verano',
+        siteName: 'Desafio Verano - Jockey GYM',
         locale: 'es_AR',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        site: 'https://jockeygym.com.ar/desafio-de-verano',
+        site: 'https://jockeygym.com.ar/desafio-verano',
         creator: 'Jockey GYM',
-        title: 'Desafio de Verano - Jockey GYM',
+        title: 'Desafio Verano - Jockey GYM',
         description: 'Instalaciones con altos standares de calidad. Un Jockey Gym cerca, no importa donde estes. Actualmente con 7 clubes en la provincia y más de 30 años en el sector. Cambiamos la vida de miles y miles de tucumanos que entrenan todos los días en nuestras instalaciones junto con los mejores profesionales de la actividad física y nutrición. Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.',
     },
 };
@@ -37,11 +40,18 @@ export default function DesafioVeranoPage() {
                     <source src="/assets/portada_hot_sale.mp4" type="video/mp4" />
                     Tu navegador no soporta videos.
                 </video> */}
-                <div className="w-full max-w-7xl px-4 xl:px-0 text-center flex flex-col items-center justify-center relative">
-                    <h1 className="w-full text-2xl lg:text-4xl text-white">Desafío de verano</h1>
-                    <p className="mt-4 w-full text-5xl lg:text-8xl font-black text-white leading-none">Podes perder <span className="leading-[0.8] py-2 lg:py-4 px-2 lg:px-4 inline-flex justify-center items-center bg-jockey relative -top-1.5 z-0"><span className="text-white relative top-1 lg:top-1.5">hasta 10 kg</span></span> <span className="block"></span>antes de que termine el a<span className="relative z-10 text-white">ñ</span>o.</p>
+                <div className="w-full py-24 lg:py-8 max-w-7xl px-4 xl:px-0 text-center flex flex-col items-center justify-center relative">
+                    <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch">
+                        <div className="w-full lg:w-1/2 flex flex-col">
+                            <h1 className="w-full text-2xl lg:text-4xl text-white">Desafío verano</h1>
+                            <p className="mt-4 w-full text-5xl lg:text-8xl font-black text-white leading-none">Podes perder <span className="leading-[0.8] py-2 lg:py-4 px-2 lg:px-4 inline-flex justify-center items-center bg-jockey relative -top-1.5 z-0"><span className="text-white relative top-1 lg:top-1.5">hasta 10 kg</span></span> <span className="block"></span>antes de que termine el a<span className="relative z-10 text-white">ñ</span>o.</p>
+                        </div>
+                        <div className="w-full max-w-xl lg:w-1/2 mt-8 lg:mt-20 flex justify-center items-center">
+                            <img src={portada2.src} className="w-full object-contain"/>
+                        </div>
+                    </div>
                     <IframeFormButton
-                        className="mt-6 bg-jockey w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded shadow-md"
+                        className="mt-8 bg-jockey w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded shadow-md"
                         label={'QUIERO RESERVAR MI LUGAR!'}
                         iframeSrc={'https://b24-gean63.bitrix24.site/crm_form_tc8ds/'}
                     />
@@ -66,7 +76,7 @@ export default function DesafioVeranoPage() {
                     <p className="w-full text-center text-base lg:text-lg font-gotham">Unité y empeza el <b className="text-jockey font-gotham-black">cambio de vida</b> que mereces</p>
                     <div className="mt-4 lg:mt-0 w-fit relative font-gotham">
                         <h2 className="w-fit text-jockey text-center text-4xl lg:text-6xl font-gotham-black drop-shadow-sm relative">
-                            DESAFIO DE VERANO
+                            DESAFIO VERANO
                         </h2>
                     </div>
                     <p className="mt-4 lg:mt-8 w-full text-center lg:text-start font-gotham">Es para vos si:</p>
@@ -84,18 +94,18 @@ export default function DesafioVeranoPage() {
                     />
                 </div>
             </section>
-            <section className="w-full lg:min-h-screen flex flex-col lg:flex-row justify-between items-stretch bg-black">
-                <div className="w-full max-w-7xl bg-black flex flex-col justify-center lg:justify-start items-center lg:items-start py-12 lg:py-24 px-4 lg:px-6 relative">
+            <section className="w-full lg:min-h-screen flex flex-col lg:flex-row justify-between items-stretch bg-white">
+                <div className="w-full max-w-7xl bg-white flex flex-col justify-center lg:justify-start items-center lg:items-start py-12 lg:py-24 px-4 lg:px-6 relative">
                     <h2 className="w-full text-5xl lg:text-7xl text-jockey leading-none text-center lg:text-start uppercase">
                         Así te ayudamos a cambiar
                     </h2>
-                    <p className="mt-2 w-full text-2xl lg:text-5xl text-white text-center lg:text-start uppercase">Obtendras:</p>
+                    <p className="mt-2 w-full text-2xl lg:text-5xl text-center lg:text-start uppercase">Obtendras:</p>
                     <ul className='mt-2 w-full text-center lg:text-start text-base lg:text-xl font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2 lg:gap-2'>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'><b className="text-jockey">Plan de entrenamiento</b> diseñado por nuestros expertos.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'><b className="text-jockey">Guías nutricionales</b> por objetivos, recetario, menú semanal.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'><b className="text-jockey">Lista de compras</b> pre armadas en <b className="text-jockey">colaboración con mercados locales.</b> Es una selección exclusiva que tiene todo lo necesario para una alimentación saludable y completa.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Acceso a <b className="text-jockey">nuestra comunidad</b> en Telegram exclusiva. Espacio para motivarte, resolver dudas, y compartir logros.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full text-white'>Invitación gratuita a <b className="text-jockey">Masterclasses mensuales.</b></span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Plan de entrenamiento</b> diseñado por nuestros expertos.</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Guías nutricionales</b> por objetivos, recetario, menú semanal.</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Lista de compras</b> pre armadas en <b className="text-jockey">colaboración con mercados locales.</b> Es una selección exclusiva que tiene todo lo necesario para una alimentación saludable y completa.</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'>Acceso a <b className="text-jockey">nuestra comunidad</b> en WhatsApp exclusiva. Espacio para motivarte, resolver dudas, y compartir logros.</span></li>
+                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'>Invitación gratuita a <b className="text-jockey">Masterclasses mensuales.</b></span></li>
                     </ul>
                     <div className="mt-8 w-full flex justify-center text-center">
                         <IframeFormButton
@@ -105,11 +115,64 @@ export default function DesafioVeranoPage() {
                         />
                     </div>
                 </div>
-                <div className="lg:grow relative">
+                <div className="lg:grow relative border-y-2 border-white">
                     <div className={`absolute top-0 left-0 w-full h-full z-10 ${styles.gradient__swiper__fotos}`}></div>
                     <div className="lg:absolute size-full aspect-[9/16] lg:aspect-auto lg:top-0 lg:left-0">
-                        <img src={foto.src} alt="Desafio de verano JOCKEY GYM" className="size-full object-cover object-top"/>
+                        <img src={foto.src} alt="Desafio verano JOCKEY GYM" className="size-full object-cover object-top"/>
                     </div>
+                </div>
+            </section>
+            <section className="w-full px-4 xl:px-0 flex flex-col justify-center items-center bg-black py-12 lg:py-24">
+                <h2 className="text-5xl lg:text-7xl text-white uppercase">Beneficios</h2>
+                <div className="mt-8 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+                    <div className="w-full flex flex-col justify-center items-center text-center">
+                        <img src={caracteristica1.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
+                        <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Nutrición</h3>
+                        <p className="mt-2 text-lg font-gotham text-white">Guías nutricionales por objetivos, recetario, menú semanal. Además, una lista de compras pre-armadas en colaboración con mercados locales.</p>
+                    </div>
+                    <div className="w-full flex flex-col justify-center items-center text-center">
+                        <img src={caracteristica2.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
+                        <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Entrenamiento</h3>
+                        <p className="mt-2 text-lg font-gotham text-white">Plan diseñado por nuestros expertos para el objetivo que tengas.</p>
+                    </div>
+                    <div className="w-full flex flex-col justify-center items-center text-center">
+                        <img src={caracteristica3.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
+                        <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Comunidad</h3>
+                        <p className="mt-2 text-lg font-gotham text-white">Acceso a nuestra comunidad en Whatsapp exclusiva. Espacio para motivarte, resolver dudas, y compartir logros. Tambien disfrutaras de invitaciones gratuitas a Masterclasses mensuales sobre fitness y bienestar.</p>
+                    </div>
+                </div>
+                <div className="mt-12 w-full max-w-7xl">
+                    <IframeFormButton
+                        className="bg-jockey w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded shadow-md"
+                        label={'QUIERO INSCRIBIRME'}
+                        iframeSrc={'https://b24-gean63.bitrix24.site/crm_form_tc8ds/'}
+                    />
+                </div>
+            </section>
+            <section className="mt-16 lg:mt-28 w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-start items-start bg-white gap-12">
+                <div className="w-full pt-8 lg:pt-12 p-6 border border-neutral-200 rounded-lg relative">
+                    <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 left-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 1 Y 2</span></h3>
+                    <p className="font-gotham text-base lg:text-lg">Durante las 2 primeras semanas del desafío verano vas a definir tus metas, encontrarte con tu “por qué”, empezar a sentar las bases para la formación de hábitos saludables duraderos.</p>
+                    <p className="mt-2 font-gotham text-base lg:text-lg">En la app TraininGym vas a tener tu rutina de entrenamiento día por día, y en la comunidad de Whatsapp la motivación diaria que necesitas para no fallar.</p>
+                </div>
+                <div className="w-full pt-8 lg:pt-12 p-6 border border-neutral-200 rounded-lg relative">
+                    <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 right-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 3 Y 4</span></h3>
+                    <p className="font-gotham text-base lg:text-lg">Ya tenés las bases, ahora es el momento de subir el nivel. Con nuestros desafíos quincenales, te retaremos a dar lo mejor de ti. Competirás con otros participantes por increíbles premios, pero lo más importante es que demostrarás a vos mismo hasta dónde podes llegar. ¡Este es tu momento para superarte y alcanzar nuevas metas!</p>
+                </div>
+                <div className="w-full pt-8 lg:pt-12 p-6 border border-neutral-200 rounded-lg relative">
+                    <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 left-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 5 Y 6</span></h3>
+                    <p className="font-gotham text-base lg:text-lg">A medida que ganas fuerza, resistencia y comenzás a ver resultados, te acompañamos con <b className="font-gotham-black">MASTERCLASSES EXCLUSIVAS</b> diseñadas para llevar tu bienestar al siguiente nivel.</p>
+                    <p className="mt-2 font-gotham text-base lg:text-lg">Aprende sobre temas clave como nutrición, cuidado del dolor lumbar, fortalecimiento del core, técnicas antiaging y cuidado de la piel. Todo lo que necesitas para potenciar tu cuerpo y mente con información de calidad y respaldo experto.</p>
+                </div>
+                <div className="w-full pt-8 lg:pt-12 p-6 border border-neutral-200 rounded-lg relative">
+                    <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 right-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 7 Y 8</span></h3>
+                    <p className="font-gotham text-base lg:text-lg">Semana a semana, estás adoptando nuevos hábitos saludables, eligiendo mejor tus comidas y encontrando tiempo en tu día para entrenar. Durante estas semanas, nos enfocaremos en fortalecer tu mentalidad, incorporar técnicas de relajación y asegurar que la recuperación forme parte clave de tu rutina. Es el momento de ajustar detalles para lograr cambios sostenibles mientras te preparas para la recta final.</p>
+                </div>
+                <div className="w-full pt-12 lg:pt-16 p-6 border border-neutral-200 rounded-lg relative">
+                <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 left-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 9 Y 10</span><span className="absolute top-7 lg:top-11 left-7 lg:left-24 whitespace-nowrap">LO LOGRASTE!</span></h3>
+                    <p className="font-gotham text-base lg:text-lg">Estás en la recta final de este Desafío de Verano y es hora de disfrutar los resultados de todo tu esfuerzo.</p>
+                    <p className="mt-2 font-gotham text-base lg:text-lg">Estas semanas se centran en terminar con fuerza, mejorar tus evaluaciones físicas y completar los últimos estudios de bioimpedancia.</p>
+                    <p className="mt-2 font-gotham text-base lg:text-lg">Es también el momento de reflexionar sobre todos tus logros (¡grandes y pequeños!) y comenzar a crear el plan que te permitirá mantener hábitos saludables a largo plazo.</p>
                 </div>
             </section>
             <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center my-12 lg:my-24">

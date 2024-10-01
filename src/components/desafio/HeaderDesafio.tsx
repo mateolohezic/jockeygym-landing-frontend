@@ -47,7 +47,7 @@ export const HeaderDesafio = () => {
     }, []);
 
     useEffect(() => {
-        if(pathname === '/desafio-de-verano/' || pathname === '/desafio-de-verano/inscripto/'){
+        if(pathname === '/desafio-verano/' || pathname === '/desafio-verano/inscripto/'){
             setClosed(true);
         }
     }, [pathname])
@@ -70,7 +70,7 @@ export const HeaderDesafio = () => {
                 </div>
                 <div className="w-full max-w-7xl py-0 flex flex-col lg:flex-row justify-center lg:justify-between items-center">
                     <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-start">
-                        <h2 className="text-white text-base lg:text-base font-gotham">DESAFIO DE VERANO</h2>
+                        <h2 className="text-white text-base lg:text-base font-gotham">DESAFIO VERANO</h2>
                         <p className="text-white text-2xl lg:text-5xl">Podes perder hasta 10 Kg</p>
                         <p className="text-white text-2xl lg:text-5xl">antes de que termine el año</p>
                         <p className="text-white text-sm lg:text-base font-gotham flex justify-center lg:justify-start items-center gap-2"><FaCalendarPlus className="fill-white relative -top-[2px]"/>LUNES 14 DE OCTUBRE</p>
@@ -94,7 +94,7 @@ export const HeaderDesafio = () => {
                         </div>
                     </div>
                     <div className="mt-8 lg:mt-0 w-fit flex justify-center items-center">
-                        <Link href={'/desafio-de-verano'} onClick={()=>{setClosed(!closed)}} className="bg-black text-white text-xl px-8 py-2 rounded-3xl hover:bg-neutral-800 hover:scale-105 transition-all duration-300 ease-in-out">INSCRIBIRME AHORA</Link>
+                        <Link href={'/desafio-verano'} onClick={()=>{setClosed(!closed)}} className="bg-black text-white text-xl px-8 py-2 rounded-3xl hover:bg-neutral-800 hover:scale-105 transition-all duration-300 ease-in-out">INSCRIBIRME AHORA</Link>
                     </div>
                 </div>
             </header>
