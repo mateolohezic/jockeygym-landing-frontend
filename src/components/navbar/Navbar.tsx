@@ -47,8 +47,8 @@ export const Navbar = () => {
     ]
 
     return (
-        <nav className="w-full flex justify-center items-center bg-transparent fixed top-0 left-0 z-50 hover:bg-[#00000050] transition-all duration-300 ease-in-out">
-            <div className="w-full xl:max-w-7xl flex justify-between items-center py-8 px-4 xl:px-0">
+        <nav className="w-full flex justify-center items-center fixed top-0 left-0 z-50 bg-black/10 hover:bg-black/50 transition-all duration-300 ease-in-out">
+            <div className="w-full xl:max-w-7xl flex justify-between items-center py-6 px-4 xl:px-0">
                 <div className='grow flex justify-start items-center'>
                     <Link href="/">
                         <Logo className='h-8 lg:h-12' pathClassName='fill-white'/>
