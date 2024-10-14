@@ -35,11 +35,7 @@ export default function DesafioVeranoPage() {
         <main className="grow w-full flex flex-col justify-center items-center">
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative text-center">
                 <div className={`absolute top-0 left-0 w-full h-full -z-10 ${styles.gradient__portada}`}></div>
-                <img src={portada.src} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Precios Jockey GYM'/>
-                {/* <video playsInline autoPlay muted loop controls={false} className="absolute top-0 left-0 w-full h-full object-cover -z-50 pointer-events-none select-none">
-                    <source src="/assets/portada_hot_sale.mp4" type="video/mp4" />
-                    Tu navegador no soporta videos.
-                </video> */}
+                <img src={portada.src} className="absolute top-0 left-0 w-full h-full object-cover -z-20" alt='Desafio de verano Jockey GYM'/>
                 <div className="w-full py-24 lg:py-8 max-w-7xl px-4 xl:px-0 text-center flex flex-col items-center justify-center relative">
                     <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch">
                         <div className="w-full lg:w-1/2 flex flex-col">
@@ -94,51 +90,23 @@ export default function DesafioVeranoPage() {
                     />
                 </div>
             </section>
-            <section className="w-full lg:min-h-screen flex flex-col lg:flex-row justify-between items-stretch bg-white">
-                <div className="w-full max-w-7xl bg-white flex flex-col justify-center lg:justify-start items-center lg:items-start py-12 lg:py-24 px-4 lg:px-6 relative">
-                    <h2 className="w-full text-5xl lg:text-7xl text-jockey leading-none text-center lg:text-start uppercase">
-                        Así te ayudamos a cambiar
-                    </h2>
-                    <p className="mt-2 w-full text-2xl lg:text-5xl text-center lg:text-start uppercase">Obtendras:</p>
-                    <ul className='mt-2 w-full text-center lg:text-start text-base lg:text-xl font-gotham flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2 lg:gap-2'>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Plan de entrenamiento</b> diseñado por nuestros expertos.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Guías nutricionales</b> por objetivos, recetario, menú semanal.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'><b className="text-jockey">Lista de compras</b> pre armadas en <b className="text-jockey">colaboración con mercados locales.</b> Es una selección exclusiva que tiene todo lo necesario para una alimentación saludable y completa.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'>Acceso a <b className="text-jockey">nuestra comunidad</b> en WhatsApp exclusiva. Espacio para motivarte, resolver dudas, y compartir logros.</span></li>
-                        <li className='w-full flex lg:flex-row gap-2 justify-center lg:justify-start items-center'><FaCircleCheck className='fill-jockey text-lg mr-0.5 hidden lg:block'/><span className='w-full'>Invitación gratuita a <b className="text-jockey">Masterclasses mensuales.</b></span></li>
-                    </ul>
-                    <div className="mt-8 w-full flex justify-center text-center">
-                        <IframeFormButton
-                            className="w-full bg-jockey text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded"
-                            label={'ESTOY LISTO PARA EMPEZAR'}
-                            iframeSrc={'https://b24-gean63.bitrix24.site/crm_form_tc8ds/'}
-                        />
-                    </div>
-                </div>
-                <div className="lg:grow relative border-y-2 border-white">
-                    <div className={`absolute top-0 left-0 w-full h-full z-10 ${styles.gradient__swiper__fotos}`}></div>
-                    <div className="lg:absolute size-full aspect-[9/16] lg:aspect-auto lg:top-0 lg:left-0">
-                        <img src={foto.src} alt="Desafio verano JOCKEY GYM" className="size-full object-cover object-top"/>
-                    </div>
-                </div>
-            </section>
-            <section className="w-full px-4 xl:px-0 flex flex-col justify-center items-center bg-black py-12 lg:py-24">
-                <h2 className="text-5xl lg:text-7xl text-white uppercase">Beneficios</h2>
+            <section className="w-full px-4 xl:px-0 flex flex-col justify-center items-center bg-white py-12 lg:py-24">
+                <h2 className="text-5xl lg:text-7xl text-jockey uppercase">Así te ayudamos a cambiar</h2>
                 <div className="mt-8 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
                     <div className="w-full flex flex-col justify-center items-center text-center">
                         <img src={caracteristica1.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
                         <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Nutrición</h3>
-                        <p className="mt-2 text-lg font-gotham text-white">Guías nutricionales por objetivos, recetario, menú semanal. Además, una lista de compras pre-armadas en colaboración con mercados locales.</p>
+                        <p className="mt-2 text-lg font-gotham">Guías nutricionales por objetivos, recetario, menú semanal. Además, una lista de compras pre-armadas en colaboración con mercados locales.</p>
                     </div>
                     <div className="w-full flex flex-col justify-center items-center text-center">
                         <img src={caracteristica2.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
                         <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Entrenamiento</h3>
-                        <p className="mt-2 text-lg font-gotham text-white">Plan diseñado por nuestros expertos para el objetivo que tengas.</p>
+                        <p className="mt-2 text-lg font-gotham">Plan diseñado por nuestros expertos para el objetivo que tengas.</p>
                     </div>
                     <div className="w-full flex flex-col justify-center items-center text-center">
                         <img src={caracteristica3.src} className="w-4/5 lg:w-full aspect-square object-cover rounded-lg"/>
                         <h3 className="mt-8 text-4xl lg:text-6xl text-jockey uppercase">Comunidad</h3>
-                        <p className="mt-2 text-lg font-gotham text-white">Acceso a nuestra comunidad en Whatsapp exclusiva. Espacio para motivarte, resolver dudas, y compartir logros. Tambien disfrutaras de invitaciones gratuitas a Masterclasses mensuales sobre fitness y bienestar.</p>
+                        <p className="mt-2 text-lg font-gotham">Acceso a nuestra comunidad en Whatsapp exclusiva. Espacio para motivarte, resolver dudas, y compartir logros. Tambien disfrutaras de invitaciones gratuitas a Masterclasses mensuales sobre fitness y bienestar.</p>
                     </div>
                 </div>
                 <div className="mt-12 w-full max-w-7xl">
@@ -147,6 +115,27 @@ export default function DesafioVeranoPage() {
                         label={'QUIERO INSCRIBIRME'}
                         iframeSrc={'https://b24-gean63.bitrix24.site/crm_form_tc8ds/'}
                     />
+                </div>
+            </section>
+            <section className="w-full px-4 xl:px-0 flex flex-col justify-center items-center">
+                <div className="w-full max-w-7xl bg-neutral-200 p-6 rounded-2xl flex flex-col lg:flex-row justify-between items-start gap-8">
+                    <div className="w-full lg:w-[calc(50%-2rem)] text-center lg:text-start">
+                        <h2 className="w-fit mx-auto lg:mx-0 text-xl lg:text-4xl uppercase bg-jockey py-1 px-2"><span className="relative top-0.5 lg:top-1 text-white">TESTIMONIO</span></h2>
+                        <h3 className="mt-6 lg:mt-4 text-5xl lg:text-6xl">CELSO ALVES</h3>
+                        <p className="mt-1 lg:mt-0 text-base lg:text-lg text-jockey font-gotham">GANADOR RETO 12 SEMANAS 2021</p>
+                        <p className="mt-4 lg:mt-0 mx-auto lg:mx-0 w-full max-w-lg font-gotham text-lg">&ldquo;Lo más dificil fue cambiar mi alimentación. No pensé que llegaría a estos resultados. Y más importante que mi cambio físico, fue sentirme bien y cómo mejoró mi autoestima&rdquo;</p>
+                    </div>
+                    <div className="w-full lg:w-1/2 aspect-video relative rounded-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/kEBU5VaJxx0?si=321gstFygc0NIQmU"
+                            title="Testimonio Celso Alves"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="h-full aspect-video absolute top-0 left-0"
+                        ></iframe>
+                    </div>
                 </div>
             </section>
             <section className="mt-16 lg:mt-28 w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-start items-start bg-white gap-12">
@@ -169,7 +158,7 @@ export default function DesafioVeranoPage() {
                     <p className="font-gotham text-base lg:text-lg">Semana a semana, estás adoptando nuevos hábitos saludables, eligiendo mejor tus comidas y encontrando tiempo en tu día para entrenar. Durante estas semanas, nos enfocaremos en fortalecer tu mentalidad, incorporar técnicas de relajación y asegurar que la recuperación forme parte clave de tu rutina. Es el momento de ajustar detalles para lograr cambios sostenibles mientras te preparas para la recta final.</p>
                 </div>
                 <div className="w-full pt-12 lg:pt-16 p-6 border border-neutral-200 rounded-lg relative">
-                <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 left-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 9 Y 10</span><span className="absolute top-7 lg:top-11 left-7 lg:left-24 whitespace-nowrap">LO LOGRASTE!</span></h3>
+                <h3 className="w-fit bg-jockey py-1 lg:py-2 px-4 text-2xl lg:text-6xl rounded-xl absolute top-0 left-4 -translate-y-1/2"><span className="relative top-0.5 lg:top-1 text-white">SEMANAS 9 Y 10</span><span className="text-2xl lg:text-4xl absolute top-7 lg:top-16 left-7 lg:left-56 whitespace-nowrap">LO LOGRASTE!</span></h3>
                     <p className="font-gotham text-base lg:text-lg">Estás en la recta final de este Desafío de Verano y es hora de disfrutar los resultados de todo tu esfuerzo.</p>
                     <p className="mt-2 font-gotham text-base lg:text-lg">Estas semanas se centran en terminar con fuerza, mejorar tus evaluaciones físicas y completar los últimos estudios de bioimpedancia.</p>
                     <p className="mt-2 font-gotham text-base lg:text-lg">Es también el momento de reflexionar sobre todos tus logros (¡grandes y pequeños!) y comenzar a crear el plan que te permitirá mantener hábitos saludables a largo plazo.</p>
@@ -214,19 +203,6 @@ export default function DesafioVeranoPage() {
                             <p className="text-jockey font-gotham-black text-5xl">$249.900</p>
                             <p className="text-sm font-gotham"><small>Por 3 meses</small></p>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section className="w-full py-12 lg:py-24 bg-black flex justify-center items-center">
-                <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center text-center">
-                    <h2 className="text-5xl lg:text-7xl text-white">APROVECHA AHORA</h2>
-                    <p className="mt-4 lg:mt-2 text-base lg:text-xl text-white font-gotham">Inscribite a nuestra <b className="font-gotham-black text-jockey">Masterclass</b>, y cambia tu vida ahora!</p>
-                    <div className="mt-8 w-full">
-                        <IframeFormButton
-                            className="bg-jockey w-full text-white text-2xl lg:text-4xl py-2 lg:py-4 px-4 lg:px-8 border-2 border-white rounded shadow-md"
-                            label={'QUIERO INSCRIBIRME'}
-                            iframeSrc={'https://b24-gean63.bitrix24.site/crm_form_tc8ds/'}
-                        />
                     </div>
                 </div>
             </section>

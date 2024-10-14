@@ -10,7 +10,7 @@ export const ContadorEvento = () => {
     const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-10-14T23:59:59';
+        const fechaWebinar:string = '2024-10-25T23:59:59';
         const fecha:any = new Date(fechaWebinar);
         const hoy:any = new Date();
         const difference = fecha - hoy;
@@ -34,7 +34,7 @@ export const ContadorEvento = () => {
     }, []);    
 
     return (
-        days &&
+        days ?
         <section className="w-full flex justify-center items-end gap-6 sm:gap-8 lg:gap-20">
             <div className="flex flex-col justify-start items-center">
                 <span className="text-6xl lg:text-8xl text-jockey">{days}</span>
@@ -53,5 +53,7 @@ export const ContadorEvento = () => {
                 <span className="text-xs lg:text-base font-gotham-black font-black uppercase">Segundos</span>
             </div>
         </section>
+        :
+        <></>
     );
 };

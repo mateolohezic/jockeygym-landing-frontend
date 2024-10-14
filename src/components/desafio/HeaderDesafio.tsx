@@ -16,7 +16,7 @@ export const HeaderDesafio = () => {
     const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-10-14T23:59:59';
+        const fechaWebinar:string = '2024-10-25T23:59:59';
         const fecha:any = new Date(fechaWebinar);
         const hoy:any = new Date();
         const difference = fecha - hoy;
