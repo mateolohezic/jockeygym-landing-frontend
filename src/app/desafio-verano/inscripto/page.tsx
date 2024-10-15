@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function InscriptoDesafioVeranoPage() {
     return (
-        <main className="w-full lg:min-h-lvh flex flex-col justify-center items-center">
+        <main className="w-full lg:min-h-lvh flex flex-col justify-center items-center bg-[rgb(23,23,23)]">
             <h1 className="sr-only">Gracias por inscribirte al Desafio Verano JOCKEY GYM</h1>
             <section className="flex flex-col lg:flex-row-reverse justify-start items-start w-full lg:min-h-lvh">
                 <div className='w-full lg:w-[70%] aspect-[5/6] sm:aspect-video lg:aspect-auto lg:min-h-lvh relative'>
@@ -34,12 +34,12 @@ export default function InscriptoDesafioVeranoPage() {
                     <img src={portada.src} alt='Gracias por inscribirte a nuestro desafio verano' className={`${styles.clip__diagonal} size-full object-cover absolute top-0 left-0 z-10`}/>
                 </div>
                 <div className='w-full lg:w-[30%] lg:min-h-lvh px-4 lg:px-8 flex flex-col justify-center items-center pt-8 pb-12 lg:py-24 relative'>
-                    <h2 className='w-full text-center text-jockey text-3xl lg:text-4xl'>¡Ya reservaste tu lugar!</h2>
-                    <p className='mt-4 lg:mt-2 w-full text-center text-xl lg:text-3xl font-gotham'>Gracias por registrarte al Desafio Verano.</p>
-                    <p className='mt-4 lg:mt-4 w-full text-center text-base lg:text-3xl font-gotham'>Recibirás más información en tu correo.</p>
-                    <p className='mt-4 lg:mt-4 w-full text-center text-base lg:text-base font-gotham'>En caso de no encontrarlo, revisa tu casillero de SPAM o PROMOCIONES y muevelo a tu bandeja principal.</p>
+                    <h2 className='w-full text-center text-white text-3xl lg:text-4xl'>¡Ya reservaste tu lugar!</h2>
+                    <p className='mt-4 lg:mt-2 w-full text-center text-white text-xl lg:text-3xl font-gotham'>Gracias por registrarte al Desafio Verano.</p>
+                    <p className='mt-4 lg:mt-4 w-full text-center text-white text-base lg:text-3xl font-gotham'>Recibirás más información en tu correo.</p>
+                    <p className='mt-4 lg:mt-4 w-full text-center text-white text-base lg:text-base font-gotham'>En caso de no encontrarlo, revisa tu casillero de SPAM o PROMOCIONES y muevelo a tu bandeja principal.</p>
                     <div className="mt-8 w-full text-center flex justify-center items-center">
-                        <Link href={'/desafio-verano'} className="bg-jockey w-full py-3 lg:py-4 px-4 lg:px-8 rounded-lg text-xl lg:text-2xl text-white font-gotham-black">
+                        <Link href={'/desafio-verano'} className="bg-white w-full py-3 lg:py-4 px-4 lg:px-8 rounded-lg text-xl lg:text-2xl font-gotham-black">
                             Volver al inicio
                         </Link>
                     </div>

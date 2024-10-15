@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 export const ContadorEvento = () => {
 
@@ -34,26 +34,28 @@ export const ContadorEvento = () => {
     }, []);    
 
     return (
-        days ?
-        <section className="w-full flex justify-center items-end gap-6 sm:gap-8 lg:gap-20">
-            <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-jockey">{days}</span>
-                <span className="text-xs lg:text-base font-gotham-black font-black uppercase">Días</span>
-            </div>
-            <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-jockey">{hours}</span>
-                <span className="text-xs lg:text-base font-gotham-black font-black uppercase">Horas</span>
-            </div>
-            <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-jockey">{minutes}</span>
-                <span className="text-xs lg:text-base font-gotham-black font-black uppercase">Minutos</span>
-            </div>
-            <div className="flex flex-col justify-start items-center">
-                <span className="text-6xl lg:text-8xl text-jockey">{seconds}</span>
-                <span className="text-xs lg:text-base font-gotham-black font-black uppercase">Segundos</span>
-            </div>
+        <section className="mt-4 lg:mt-6 w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
+            {
+                days &&
+                <Fragment>
+                    <div className="flex flex-col justify-start items-center">
+                        <span className="text-4xl lg:text-7xl font-gotham-black">{days}</span>
+                        <span className="text-xs lg:text-base font-black uppercase">Días</span>
+                    </div>
+                    <div className="flex flex-col justify-start items-center">
+                        <span className="text-4xl lg:text-7xl font-gotham-black">{hours}</span>
+                        <span className="text-xs lg:text-base font-black uppercase">Horas</span>
+                    </div>
+                    <div className="flex flex-col justify-start items-center">
+                        <span className="text-4xl lg:text-7xl font-gotham-black">{minutes}</span>
+                        <span className="text-xs lg:text-base font-black uppercase">Minutos</span>
+                    </div>
+                    <div className="flex flex-col justify-start items-center">
+                        <span className="text-4xl lg:text-7xl font-gotham-black">{seconds}</span>
+                        <span className="text-xs lg:text-base font-black uppercase">Segundos</span>
+                    </div>
+                </Fragment>
+            }
         </section>
-        :
-        <></>
     );
 };

@@ -1,0 +1,9 @@
+.clip__diagonal{
+    clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+}
+
+@media (min-width: 1024px) {   
+    .clip__diagonal{
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    }
+}
