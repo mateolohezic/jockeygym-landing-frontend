@@ -34,7 +34,8 @@ export const ContadorEvento = () => {
     }, []);    
 
     return (
-        <section className="mt-4 lg:mt-6 w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
+        // <section className="mt-4 lg:mt-6 w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
+        <section className="w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
             {
                 days &&
                 <Fragment>
