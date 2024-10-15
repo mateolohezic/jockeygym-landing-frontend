@@ -35,19 +35,6 @@ export const metadata: Metadata = {
 export default function DesafioVeranoPage() {
     return (
         <main className="grow w-full min-h-lvh flex flex-col justify-center items-center bg-[rgb(23,23,23)] relative">
-            {/* <section className="w-full aspect-video relative">
-                <video
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                    controls={false}
-                    className="absolute top-0 left-0 size-full object-contain pointer-events-none select-none"
-                >
-                    <source src="/assets/video_desafio_verano.mp4" type="video/mp4" />
-                    Tu navegador no soporta videos.
-                </video>
-            </section> */}
             <section className="w-full min-h-lvh flex flex-col justify-center items-center relative text-center">
                 <div className={`absolute top-0 left-0 size-full z-10 ${styles.gradient__portada}`}></div>
                 <div className="absolute bottom-0 left-0 w-full h-24 z-20 bg-gradient-to-b from-transparent to-[rgb(23,23,23)]"></div>
