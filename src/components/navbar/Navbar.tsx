@@ -14,8 +14,8 @@ export const Navbar = () => {
             href: '/precios'
         },
         {
-            title: 'Desafio Verano',
-            href: '/desafio-verano'
+            title: 'Black Friday',
+            href: '/black-friday'
         },
         // {
         //     title: 'Personal Training',

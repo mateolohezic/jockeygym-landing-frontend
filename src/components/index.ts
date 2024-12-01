@@ -1,3 +1,12 @@
+export { BlackFridayWrapper } from './black-friday/BlackFridayWrapper';
+export { BlackFridayPreciosWrapper } from './black-friday/BlackFridayPreciosWrapper';
+export { HeaderBlackFriday } from './black-friday/HeaderBlackFriday';
+export { ContadorBlackFriday } from './black-friday/ContadorBlackFriday';
+
+export { DesafioWrapper } from './desafio/DesafioWrapper';
+
+export { DesafioVeranoModal } from './modals/DesafioVeranoModal';
+
 export { Logo } from './ui/Logo';
 export { Circle } from './ui/Circle';
 export { SwiperSede } from './ui/SwiperSede';

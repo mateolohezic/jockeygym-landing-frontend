@@ -1,8 +1,8 @@
 'use client'
 
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-export const ContadorEvento = () => {
+export const ContadorBlackFriday = () => {
 
     const [days, setDays] = useState<number>();
     const [hours, setHours] = useState<number>();
@@ -10,7 +10,7 @@ export const ContadorEvento = () => {
     const [seconds, setSeconds] = useState<number>();
 
     const calculateTimeLeft = () => {
-        const fechaWebinar:string = '2024-10-31T23:59:59';
+        const fechaWebinar:string = '2024-12-10T23:59:59';
         const fecha:any = new Date(fechaWebinar);
         const hoy:any = new Date();
         const difference = fecha - hoy;
@@ -31,26 +31,33 @@ export const ContadorEvento = () => {
             calculateTimeLeft();
         }, 1000);
         return () => clearInterval(timer);
-    }, []);    
+    }, []);
+
+    useEffect(() => {
+        const isClosed = localStorage.getItem('CBF') === 'true';
+        if(!isClosed){
+            localStorage.setItem('CBF', 'true');
+        }
+    }, [])
+    
 
     return (
-        // <section className="mt-4 lg:mt-6 w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
         <section className="mt-4 lg:mt-8 w-full font-gotham flex justify-center items-end gap-6 sm:gap-8 lg:gap-16 min-h-14 lg:min-h-24">
             <div className="flex flex-col justify-start items-center">
-                <span className="text-4xl lg:text-7xl font-gotham-black">{days || 0}</span>
-                <span className="text-xs lg:text-base font-black uppercase">Días</span>
+                <span className="text-4xl lg:text-7xl font-gotham-black text-white">{days || 0}</span>
+                <span className="text-xs lg:text-base font-black uppercase text-white">Días</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-4xl lg:text-7xl font-gotham-black">{hours || 0}</span>
-                <span className="text-xs lg:text-base font-black uppercase">Horas</span>
+                <span className="text-4xl lg:text-7xl font-gotham-black text-white">{hours || 0}</span>
+                <span className="text-xs lg:text-base font-black uppercase text-white">Horas</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-4xl lg:text-7xl font-gotham-black">{minutes || 0}</span>
-                <span className="text-xs lg:text-base font-black uppercase">Minutos</span>
+                <span className="text-4xl lg:text-7xl font-gotham-black text-white">{minutes || 0}</span>
+                <span className="text-xs lg:text-base font-black uppercase text-white">Minutos</span>
             </div>
             <div className="flex flex-col justify-start items-center">
-                <span className="text-4xl lg:text-7xl font-gotham-black">{seconds || 0}</span>
-                <span className="text-xs lg:text-base font-black uppercase">Segundos</span>
+                <span className="text-4xl lg:text-7xl font-gotham-black text-white">{seconds || 0}</span>
+                <span className="text-xs lg:text-base font-black uppercase text-white">Segundos</span>
             </div>
         </section>
     );
