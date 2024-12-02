@@ -236,8 +236,11 @@ export const BlackFridayWrapper = () => {
                     <p className="mt-8 lg:mt-4 bg-white px-4 font-gotham-black tracking-widest text-3xl lg:text-xl uppercase relative">Preventa</p>
                     <p className="mt-1 font-gotham tracking-widest text-3xl lg:text-xl uppercase text-white relative">Exclusiva</p>
                 </div>
-                <div className="mt-4 lg:mt-8 w-full lg:pl-8 lg:col-span-2 text-center lg:text-start">
+                <div className="mt-4 lg:mt-8 w-full lg:pl-8 lg:col-span-2 text-center lg:text-start flex flex-col gap-8">
                     <p className="text-white text-2xl lg:text-4xl font-gotham">Con más sucursales cerca tuyo, te ofrecemos <b className="text-white font-gotham-black">calidad, comodidad, y la mejor experiencia en cada entrenamiento.</b></p>
+                    <Link href={'/barrio-sur'} className="w-full py-2 px-4 bg-gradient-to-r from-green-300 via-indigo-400 to-rose-400 text-white rounded-full text-center font-gotham text-2xl lg:text-4xl uppercase tracking-widest">
+                        Quiero verla ya
+                    </Link>
                 </div>
             </section>
             <DesafioVeranoModal iframeSrc="https://jockeygymtuc.bitrix24.site/crm_form3/?utm_source=landingBF" isOpen={isOpenA} setIsOpen={setIsOpenA} />

@@ -14,6 +14,10 @@ export const Navbar = () => {
             href: '/precios'
         },
         {
+            title: '+ Barrio Sur',
+            href: '/barrio-sur'
+        },
+        {
             title: 'Black Friday',
             href: '/black-friday'
         },

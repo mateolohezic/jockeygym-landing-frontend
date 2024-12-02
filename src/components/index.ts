@@ -3,6 +3,9 @@ export { BlackFridayPreciosWrapper } from './black-friday/BlackFridayPreciosWrap
 export { HeaderBlackFriday } from './black-friday/HeaderBlackFriday';
 export { ContadorBlackFriday } from './black-friday/ContadorBlackFriday';
 
+export { BarrioSurWrapper } from './barrio-sur/BarrioSurWrapper';
+export { SwiperBarrioSur } from './barrio-sur/SwiperBarrioSur';
+
 export { DesafioWrapper } from './desafio/DesafioWrapper';
 
 export { DesafioVeranoModal } from './modals/DesafioVeranoModal';
