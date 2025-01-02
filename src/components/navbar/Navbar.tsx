@@ -17,10 +17,6 @@ export const Navbar = () => {
             title: '+ Barrio Sur',
             href: '/barrio-sur'
         },
-        {
-            title: 'Black Friday',
-            href: '/black-friday'
-        },
         // {
         //     title: 'Personal Training',
         //     href: '/personal-training'

@@ -36,8 +36,13 @@ export const BlackFridayWrapper = () => {
                     className="size-full object-contain"
                 />
             </section>
-            <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 my-12 lg:my-24">
-                <div className="w-full max-w-3xl flex flex-col justify-center items-center gap-12 lg:gap-24">
+            {/* <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 my-12 lg:my-24"> */}
+            <section className="w-full max-w-7xl px-4 xl:px-0 my-12 lg:my-24">
+                <div className="w-full flex flex-col justify-center items-center text-center text-2xl font-gotham-black">
+                    <p className="text-white font-gotham">Si estas buscando una oportunidad que te garantice una</p>
+                    <p className="text-white"><b className="bg-white px-2 block lg:inline">mejor calidad de vida</b> <b className="text-white font-black uppercase block lg:inline">esta es tu oportunidad</b></p>
+                </div>
+                {/* <div className="w-full max-w-3xl flex flex-col justify-center items-center gap-12 lg:gap-24">
                     <div className="w-full flex flex-col justify-center items-center text-center text-2xl font-gotham-black">
                         <p className="text-white font-gotham">Si estas buscando una oportunidad que te garantice una</p>
                         <p className="text-white"><b className="bg-white px-2 block lg:inline">mejor calidad de vida</b> <b className="text-white font-black uppercase block lg:inline">esta es tu oportunidad</b></p>
@@ -72,16 +77,35 @@ export const BlackFridayWrapper = () => {
                         alt="Black Friday Jockey Gym"
                         className="size-full object-contain absolute top-0 left-0 z-10"
                     />
+                </div> */}
+            </section>
+            <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col lg:flex-row justify-center items-center gap-8 mb-2 lg:mb-12">
+                <div className="grow flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-start">
+                    <h2 className="font-gotham text-white text-2xl lg:text-4xl">Conocé los <b className="block font-gotham-black text-jockey">3 secretos claves</b> para transformar <span className="block"></span>tu cuerpo este 2025.</h2>
+                    <p className="mt-4 lg:text-xl text-white font-gotham lg:pr-12">Más de <b className="text-white font-gotham-black">300 personas</b> ya lo probaron y lograron sus metas de salud y fitness.</p>
+                    <p className="mt-1 lg:text-xl text-white font-gotham lg:pr-12">Ahora es tu turno de experimentar el cambio, empezá por acá.</p>
+                </div>
+                <div className="w-full max-w-2xl aspect-video rounded-xl overflow-hidden relative">
+                    <iframe
+                        src="https://www.youtube.com/embed/MNIawOAmbJs?si=_oLa-czUeqD_BrEe"
+                        title="Bienvenido a Personal Jockey"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        className="size-full absolute top-0 left-0 rounded-xl"
+                    />
                 </div>
             </section>
             <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center my-8 lg:my-0">
                 <motion.button
                     whileHover={{scale:1.05, rotate: 1}}
                     type="button"
-                    onClick={ () => setIsOpenA(true) }
-                    className="w-full py-4 px-4 bg-gradient-to-r from-green-300 via-indigo-400 to-rose-400 text-white rounded-full text-center font-gotham text-2xl lg:text-4xl uppercase tracking-widest"
+                    // onClick={ () => setIsOpenA(true) }
+                    onClick={ () => setIsOpenB(true) }
+                    className="w-full py-4 px-4 bg-gradient-to-r from-green-300 via-indigo-400 to-rose-400 text-white rounded-full text-center font-gotham text-lg lg:text-4xl uppercase tracking-widest"
                 >
-                    Quiero ser parte
+                    Reservar mi cupo
                 </motion.button>
             </div>
             <section className="w-full max-w-7xl px-4 xl:px-0 flex justify-center items-center my-12 lg:my-24">
