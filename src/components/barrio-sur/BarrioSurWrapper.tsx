@@ -52,23 +52,70 @@ export const BarrioSurWrapper = () => {
             </div>
             <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center mb-12">
                 <div className="w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-start">
-                    <p className="text-2xl lg:text-7xl font-gotham-black text-white uppercase leading-none">Primeros 50 cupos</p>
-                    <p className="text-3xl lg:text-8xl font-gotham-black text-white uppercase leading-none">sin cargo</p>
-                    <p className="text-4xl lg:text-9xl text-white uppercase leading-none">hasta fecha apertura</p>
+                    <p className="text-2xl lg:text-7xl font-gotham-black text-white uppercase leading-none">50 cupos disponibles</p>
+                    <p className="text-3xl lg:text-8xl font-gotham-black text-white uppercase leading-none">un mes de entrenamiento</p>
+                    <p className="text-4xl lg:text-9xl text-white uppercase leading-none">gratis</p>
                 </div>
                 <div className="w-full h-1 rounded-full bg-gradient-to-r from-teal-300 via-lime-300 to-rose-400 my-8 lg:my-12"></div>
                 <div className="w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-start">
-                    <p className="text-2xl lg:text-7xl font-gotham-black text-white uppercase leading-none">Segundos 50 cupos</p>
-                    <p className="text-3xl lg:text-8xl font-gotham-black text-white uppercase leading-none">50% de descuento</p>
-                    <p className="text-4xl lg:text-9xl text-white uppercase leading-none">En todas nuestras instalaciones</p>
-                    <p className="text-4xl lg:text-9xl text-white uppercase leading-none">Hasta fecha apertura</p>
+                    <p className="text-2xl lg:text-7xl font-gotham-black text-white uppercase leading-none">Súmate a la preventa</p>
+                    <p className="mt-4 text-2xl lg:text-5xl font-gotham-black text-white uppercase leading-none">Reservá tu lugar en el mejor gimnasio de Barrio Sur a un precio promocional exclusivo que no volverá a estar disponible.</p>
+                    <p className="mt-4 text-2xl lg:text-5xl font-gotham-black text-white uppercase leading-none">Disfrutás de un mes de entrenamiento gratis en cualquiera de nuestras otras sedes mientras esperas la apertura.</p>
                 </div>
             </div>
-            <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center mb-12 lg:mb-24">
-                <Link href={'/black-friday/precios'} className="w-full py-4 px-4 bg-gradient-to-r from-green-500 via-teal-300 lg:via-indigo-500 to-cyan-400 lg:to-rose-400 text-white rounded-full text-center font-gotham-black lg:font-gotham lg:text-4xl uppercase tracking-widest">
-                    Ver precios
-                </Link>
+            <div className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center my-12 lg:my-24">
+                <motion.button
+                    whileHover={{scale:1.05, rotate: 1}}
+                    type="button"
+                    onClick={ () => setIsOpen(true) }
+                    className="w-full py-4 px-4 bg-gradient-to-r from-cyan-500 lg:via-indigo-500 via-teal-300 lg:to-rose-400 to-green-400 text-white rounded-full text-center font-gotham-black lg:font-gotham lg:text-4xl uppercase tracking-widest"
+                >
+                    Quiero reservar mi cupo
+                </motion.button>
             </div>
+            <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center gap-8 mb-12 lg:mb-24">
+                <div className="grow">
+                    <p className="text-2xl lg:text-6xl font-gotham-black text-white uppercase leading-none">Anual VIP fundador</p>
+                </div>
+                <div className="w-fit flex flex-col justify-center items-center">
+                    <p className="font-gotham text-xl text-white tracking-widest uppercase">Efectivo</p>
+                    <div className="mt-2 w-full lg:max-w-sm flex flex-col gap-1">
+                        <div className="w-full flex gap-2">
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase"><b className="font-gotham-black text-white">1</b> Pago</p>
+                            <div className="grow border-b-4 border-dotted border-white relative -top-1.5"></div>
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase">$<b className="font-gotham-black text-white">389.900</b></p>
+                        </div>
+                        <div className="w-full flex gap-2">
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase"><b className="font-gotham-black text-white">2</b> Pagos</p>
+                            <div className="grow border-b-4 border-dotted border-white relative -top-1.5"></div>
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase">$<b className="font-gotham-black text-white">200.000</b></p>
+                        </div>
+                    </div>
+                    <div className="mt-8 bg-white w-full lg:max-w-sm h-0.5 rounded-full"></div>
+                    <p className="mt-4 font-gotham text-xl text-white tracking-widest uppercase">Débito o transferencia</p>
+                    <div className="mt-2 w-full lg:max-w-sm flex flex-col gap-1">
+                        <div className="w-full flex gap-2">
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase"><b className="font-gotham-black text-white">1</b> Pago</p>
+                            <div className="grow border-b-4 border-dotted border-white relative -top-1.5"></div>
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase">$<b className="font-gotham-black text-white">439.900</b></p>
+                        </div>
+                        <div className="w-full flex gap-2">
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase"><b className="font-gotham-black text-white">2</b> Pagos</p>
+                            <div className="grow border-b-4 border-dotted border-white relative -top-1.5"></div>
+                            <p className="font-gotham lg:text-lg text-white tracking-widest uppercase">$<b className="font-gotham-black text-white">225.000</b></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col justify-center items-center gap-4 lg:gap-8 mb-12 lg:mb-24">
+                <p className="text-xl lg:text-6xl font-gotham-black text-white uppercase leading-none">¡No te quedes sin tu cupo!</p>
+                <div className="w-full flex items-center gap-4">
+                    <div className="grow p-0.5 lg:p-2 h-6 lg:h-20 bg-white rounded-full flex justify-start items-center">
+                        <div className="w-[57%] h-full bg-jockey rounded-full"></div>
+                    </div>
+                    <p className="text-2xl lg:text-6xl font-gotham-black text-white">57%</p>
+                </div>
+            </section>
             <section className="w-full max-w-7xl px-4 xl:px-0 flex flex-col lg:flex-row justify-center gap-12 lg:gap-8 mb-12 lg:mb-24">
                 <div className="w-full lg:max-w-md xl:max-w-xl">
                     <p className="text-5xl lg:text-7xl xl:text-8xl font-gotham text-white text-center lg:text-start">Descubri<span className="block"></span> nuestra <b className="block font-gotham-black text-white">nueva<span className="block"></span> ubicación</b></p>
@@ -87,7 +134,7 @@ export const BarrioSurWrapper = () => {
                 <img src={iconBlack.src} alt="Black Friday Jockey Gym" className="w-44 object-contain"/>
             </div>
             <p className="w-full max-w-7xl px-4 mb-8 lg:mb-12 text-sm lg:text-2xl font-gotham-black uppercase text-center text-white">Promoción válida para nuevos socios.</p>
-            <DesafioVeranoModal iframeSrc="https://jockeygymtuc.bitrix24.site/crm_form3/?utm_source=landingBF" isOpen={isOpen} setIsOpen={setIsOpen} />
+            <DesafioVeranoModal iframeSrc="https://b24-bbzf5p.bitrix24.site/?utm_source=landingBS" isOpen={isOpen} setIsOpen={setIsOpen} />
         </Fragment>
     )
 }
