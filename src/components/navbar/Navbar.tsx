@@ -13,10 +13,6 @@ export const Navbar = () => {
             title: 'Precios',
             href: '/precios'
         },
-        {
-            title: '+ Barrio Sur',
-            href: '/barrio-sur'
-        },
         // {
         //     title: 'Personal Training',
         //     href: '/personal-training'

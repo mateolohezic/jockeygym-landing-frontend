@@ -32,20 +32,20 @@ export default function PreciosPage() {
       properties: [
         {
           name: 'Mensual Multisede',
-          value: '54.900'
+          value: '60.000'
         },
         {
           name: 'Trimestral Multisede',
-          value: '145.000'
+          value: '160.000'
         },
         {
           name: 'Semestral Premium',
-          value: '259.900',
+          value: '300.000',
           important: true
         },
         {
           name: 'Anual VIP',
-          value: '439.900'
+          value: '410.000'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -55,20 +55,20 @@ export default function PreciosPage() {
       properties: [
         {
           name: 'Mensual Multisede',
-          value: '54.900'
+          value: '60.000'
         },
         {
           name: 'Trimestral Multisede',
-          value: '145.000'
+          value: '160.000'
         },
         {
           name: 'Semestral Premium',
-          value: '259.900',
+          value: '300.000',
           important: true
         },
         {
           name: 'Anual VIP',
-          value: '439.900'
+          value: '410.000'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -78,20 +78,20 @@ export default function PreciosPage() {
       properties: [
         {
           name: 'Mensual Multisede',
-          value: '54.900'
+          value: '60.000'
         },
         {
           name: 'Trimestral Multisede',
-          value: '145.000'
+          value: '160.000'
         },
         {
           name: 'Semestral Premium',
-          value: '259.900',
+          value: '300.000',
           important: true
         },
         {
           name: 'Anual VIP',
-          value: '439.900'
+          value: '410.000'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -101,20 +101,20 @@ export default function PreciosPage() {
       properties: [
         {
           name: 'Mensual Multisede',
-          value: '54.900'
+          value: '60.000'
         },
         {
           name: 'Trimestral Multisede',
-          value: '145.000'
+          value: '160.000'
         },
         {
           name: 'Semestral Premium',
-          value: '259.900',
+          value: '300.000',
           important: true
         },
         {
           name: 'Anual VIP',
-          value: '439.900'
+          value: '410.000'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'
@@ -124,24 +124,24 @@ export default function PreciosPage() {
       properties: [
         {
           name: 'Mensual',
-          value: '47.900'
+          value: '55.000'
         },
         {
           name: 'Mensual Multisede',
-          value: '54.900'
+          value: '60.000'
         },
         {
           name: 'Trimestral Multisede',
-          value: '145.000'
+          value: '160.000'
         },
         {
           name: 'Semestral Premium',
-          value: '259.900',
+          value: '300.000',
           important: true
         },
         {
           name: 'Anual VIP',
-          value: '439.900'
+          value: '410.000'
         },
       ],
       href:'https://jockeygymtuc.bitrix24.site/crm_form3/'

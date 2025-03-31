@@ -62,7 +62,7 @@ export default function CatalinasPage() {
           <p className="mt-1 lg:mt-2 font-gotham w-full lg:w-5/6 text-sm lg:text-lg indent-4 lg:indent-8">Contamos con una amplia grilla de horarios para que puedas entrenar diariamiente y a tu ritmo. Buscamos constantemente adaptarnos a las necesidades de nuestros socios en cuanto a variedad y tipos de clases.</p>
         </div>
       </section>
-      <section className="w-full lg:min-h-screen pt-12 lg:pt-0 bg-jockey flex flex-col justify-between items-center">
+      <section className="w-full lg:min-h-screen pt-12 lg:pt-8 bg-jockey flex flex-col justify-between items-center">
         <div className="grow w-full flex flex-col justify-end items-center" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
           <span className="flex flex-col justify-center items-center text-center">
             <span className="font-gotham text-white text-2xl lg:text-4xl w-full">SEDE</span>
@@ -81,7 +81,7 @@ export default function CatalinasPage() {
                 <span className="text-white font-gotham">SÁBADO</span>
                 <span className="text-white font-gotham">09:00 a 20:00</span>
                 <span className="text-white font-gotham mt-2">DOMINGO</span>
-                <span className="text-white font-gotham">09:00 a 20:00</span>
+                <span className="text-white font-gotham">09:00 a 19:00</span>
               </div>
             </div>
           </div>
@@ -89,172 +89,6 @@ export default function CatalinasPage() {
         </div>
         <div className="w-full flex flex-col justify-center items-center">
           <SwiperSede images={images} sede='Catalinas'/>
-        </div>
-      </section>
-      <section className="w-full lg:min-h-svh flex flex-col justify-center lg:justify-start items-center relative py-12 lg:py-16">
-        <h3 className="font-gotham-black text-jockey text-xl lg:text-4xl text-center">¡Un horario hecho para vos!</h3>
-        <div className="w-full overflow-x-auto px-8 lg:px-4 lg:flex lg:justify-center lg:items-center">
-          <table className="w-full max-w-7xl table table-auto mt-6 lg:mt-16">
-            <thead>
-              <tr className="font-gotham border-b border-jockey">
-                <th></th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Lunes</th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Martes</th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Miercoles</th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Jueves</th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Viernes</th>
-                <th className="text-center text-jockey text-sm pb-2 px-4">Sábado</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y-[1px] divide-jockey">
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>07:00</td>
-                <td className='text-center py-4 px-4'>Cycle</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Cycle</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Cycle</td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>07:15</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>8:15</td>
-                <td className='text-center py-4 px-4'>Force M.</td>
-                <td className='text-center py-4 px-4'>Cycle</td>
-                <td className='text-center py-4 px-4'>Force M.</td>
-                <td className='text-center py-4 px-4'>Cycle</td>
-                <td className='text-center py-4 px-4'>Force M.</td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>14:30</td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Step</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Ritmos</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">GAP</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Ritmos</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Body</span>
-                </td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>15:30</td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>18:00</td>
-                <td className='text-center py-4 px-4'>Strong</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Strong</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Strong</td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>18:30</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Zumba</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Zumba</td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>19:00</td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Zumba</span>
-                  <span className="block">Cycle</span>
-                  <span className="block">Force M.</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Fisico y Forma</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Zumba</span>
-                  <span className="block">Cycle</span>
-                  <span className="block">Force M.</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Fisico y Forma</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Zumba</span>
-                  <span className="block">Cycle</span>
-                  <span className="block">Force M.</span>
-                </td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>20:00</td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Funcional</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Funcional</span>
-                  <span className="block">Fitboxing</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Funcional</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Funcional</span>
-                  <span className="block">Fitboxing</span>
-                </td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Cycle</span>
-                  <span className="block">Funcional</span>
-                </td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-              <tr className='h-12 font-gotham-black bg-white hover:bg-zinc-100 transition-all duration-300 ease-in-out'>
-                <td className='text-center text-jockey'>21:00</td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Funcional</span>
-                  <span className="block">Body</span>
-                </td>
-                <td className='text-center'></td>
-                <td className='text-center py-4 px-4'>
-                  <span className="block">Funcional</span>
-                  <span className="block">Body</span>
-                </td>
-                <td className='text-center py-4 px-4'></td>
-                <td className='text-center py-4 px-4'>Funcional</td>
-                <td className='text-center py-4 px-4'></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </section>
     </main>
